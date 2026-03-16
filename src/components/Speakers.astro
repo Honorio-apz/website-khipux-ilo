@@ -8,6 +8,9 @@ interface Props {
 
 const { locale } = Astro.props;
 const isEs = locale === "es";
+
+const filteredSpeakers = speakersData.filter(s => s.type === "keynote" || s.type === "speaker");
+const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
 ---
 
 <section id="speakers" class="py-32 bg-black relative overflow-hidden">
@@ -36,49 +39,51 @@ const isEs = locale === "es";
       </a>
     </div>
 
-    <!-- Speakers Grid - Restored Circular Design -->
-    <div class="relative">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-12 gap-y-20">
-        {
-          speakersData
-            .filter((s) => s.type === "keynote" || s.type === "speaker")
-            .map((speaker) => (
-            <a href={`/${locale}/speakers#${speaker.id}`} class="group relative flex flex-col items-center cursor-pointer transition-transform hover:scale-105">
-              <div class="relative w-30 h-30 md:w-40 md:h-40 mb-8">
-                <!-- Decorative Margin Frame (Inverse propagation effect) -->
-                <div class="absolute inset-[-25%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center">
-                  <img
-                    src="/margen.webp"
-                    alt=""
-                    class="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(216,81,32,0.4)]"
-                  />
-                </div>
-                
-                <!-- Circular Image Container -->
-                <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-black z-10 shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:border-primary-500">
-                  <img
-                    src={speaker.image}
-                    alt={speaker.name}
-                    class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                    loading="lazy"
-                  />
+    <!-- Speakers Slider - Infinite CSS Scroll -->
+    <div class="relative w-full overflow-hidden flex flex-col items-center">
+      <!-- Gradient Masks for smooth entry/exit edges -->
+      <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-linear-to-r from-black to-transparent z-30 pointer-events-none"></div>
+      <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-linear-to-l from-black to-transparent z-30 pointer-events-none"></div>
+      
+      <div class="speaker-slider w-full">
+        <div class="speaker-track flex items-start gap-12 sm:gap-16 w-max py-4 hover:[animation-play-state:paused] pr-12">
+          {
+            infiniteSpeakers.map((speaker, index) => (
+              <a href={`/${locale}/speakers#${speaker.id}`} class="group relative flex flex-col items-center cursor-pointer shrink-0 w-32 md:w-48 transition-transform hover:scale-105">
+                <div class="relative w-30 h-30 md:w-40 md:h-40 mb-8 mx-auto">
+                  <!-- Decorative Margin Frame (Inverse propagation effect) -->
+                  <div class="absolute inset-[-25%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center">
+                    <img
+                      src="/margen.webp"
+                      alt=""
+                      class="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(216,81,32,0.4)]"
+                    />
+                  </div>
                   
-
+                  <!-- Circular Image Container -->
+                  <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-black z-10 shadow-2xl transition-all duration-300 group-hover:scale-105 group-hover:border-primary-500">
+                    <img
+                      src={speaker.image}
+                      alt={speaker.name}
+                      class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <!-- Speaker Info (Outside for better legibility) -->
-              <div class="text-center z-20">
-                <h3 class="font-bold text-md md:text-lg text-white mb-2 group-hover:text-primary-400 transition-colors uppercase tracking-tight">
-                  {speaker.name}
-                </h3>
-                <p class="text-[10px] md:text-xs text-primary-500 font-bold uppercase">
-                  {speaker.role}
-                </p>
-              </div>
-            </a>
-          ))
-        }
+                <!-- Speaker Info (Outside for better legibility) -->
+                <div class="text-center z-20 w-full shrink-0">
+                  <h3 class="font-bold text-md md:text-lg text-white mb-2 group-hover:text-primary-400 transition-colors uppercase tracking-tight wrap-break-word">
+                    {speaker.name}
+                  </h3>
+                  <p class="text-[10px] md:text-xs text-primary-500 font-bold uppercase">
+                    {speaker.role}
+                  </p>
+                </div>
+              </a>
+            ))
+          }
+        </div>
       </div>
     </div>
 
@@ -91,5 +96,33 @@ const isEs = locale === "es";
         </span>
       </div>
     </div>
-  </Wrapper>
 </section>
+
+<style>
+  .speaker-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  /* We double the array so when we translate -50%, we cleanly loop into the copy */
+  .speaker-track {
+    animation: scroll-left 40s linear infinite;
+    /* Optimize animation paint flow */
+    will-change: transform; 
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Slow down on hover */
+  .speaker-track:hover {
+    animation-play-state: paused;
+  }
+</style>
