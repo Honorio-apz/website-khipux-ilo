@@ -17,7 +17,8 @@ const isEs = locale === "es";
 ---
 
 <nav
-  class="fixed w-full z-50 top-0 start-0 bg-black/95 backdrop-blur-md border-b border-gray-800"
+  id="main-nav"
+  class="fixed w-full z-50 top-0 start-0 border-b bg-transparent border-transparent transition-all duration-300 ease-in-out"
 >
   <Wrapper>
     <div class="flex items-center justify-between py-3">
@@ -106,8 +107,23 @@ const isEs = locale === "es";
 <script is:inline>
   const menuBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
+  const mainNav = document.getElementById("main-nav");
 
+  // Mobile menu toggle
   menuBtn?.addEventListener("click", () => {
     mobileMenu?.classList.toggle("hidden");
+  });
+
+  // Sticky transparent-to-black navbar logic
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+      // Scrolled down: add glassmorphic black background
+      mainNav?.classList.remove("bg-transparent", "border-transparent");
+      mainNav?.classList.add("bg-black/95", "backdrop-blur-md", "border-gray-800");
+    } else {
+      // Top of page: transparent
+      mainNav?.classList.remove("bg-black/95", "backdrop-blur-md", "border-gray-800");
+      mainNav?.classList.add("bg-transparent", "border-transparent");
+    }
   });
 </script>

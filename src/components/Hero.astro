@@ -20,154 +20,175 @@ const backgroundSymbols = [
 ---
 
 <section
-  class="relative min-h-screen flex items-center bg-bg overflow-hidden pt-20 lg:pt-0"
+  class="relative min-h-dvh flex items-center justify-center bg-black bg-cover bg-center overflow-hidden pt-32 pb-12"
+  style="background-image: url('/venue/3-ciudad.jpg');"
 >
-  <!-- Símbolos culturales Removed -->
+  <!-- Overlays & Atmosphere -->
+  <div
+    class="absolute inset-0 bg-linear-to-b from-black/20 via-black/60 to-black z-0 pointer-events-none"
+  >
+  </div>
 
-  <Wrapper class="relative z-10">
-    <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-      <!-- Left: Text Content -->
-      <div class="space-y-6 animate-slide-in-left">
-        <!-- Event Badge -->
-        <div class="flex items-center gap-4">
-          <div
-            class="flex items-center gap-2 text-text-muted text-sm tracking-wider uppercase font-medium"
+  <!-- Glowing Orbs inside the atmosphere -->
+  <div
+    class="absolute top-1/4 left-1/4 w-[30vh] h-[30vh] bg-primary-500/20 rounded-full blur-[100px] animate-orb-pulse z-0 pointer-events-none"
+  >
+  </div>
+  <div
+    class="absolute bottom-1/4 right-1/4 w-[40vh] h-[40vh] bg-primary-600/10 rounded-full blur-[120px] animate-orb-pulse-slow z-0 pointer-events-none"
+  >
+  </div>
+
+  <Wrapper
+    class="relative z-10 w-full flex flex-col items-center justify-center text-center px-4"
+  >
+    <div
+      class="max-w-5xl mx-auto space-y-6 md:space-y-8 animate-slide-in-up flex flex-col items-center"
+    >
+      <!-- Event Badge (Pill) -->
+      <div class="animate-fade-in flex items-center justify-center gap-4">
+        <div
+          class="backdrop-blur-xl bg-white px-6 py-2 rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-transform hover:scale-105"
+        >
+          <span
+            class="bg-clip-text text-transparent bg-linear-to-r from-primary-400 to-primary-600 text-xs tracking-widest uppercase font-black"
           >
-            <span class="w-6 h-px bg-primary-500"></span>
-            <span>{content.event_type}</span>
-          </div>
-        </div>
-
-        <!-- Title - Slightly Reduced Size for better flow -->
-        <div>
-          <h1
-            class="text-xl sm:text-2xl lg:text-[3.5rem] font-bold text-text leading-[1.05] tracking-tight font-heading"
-          >
-            KHIPUx Ilo
-          </h1>
-          <div class="w-24 h-1 bg-primary-500 mt-5 rounded-full"></div>
-        </div>
-
-        <!-- Subtitle -->
-        <p class="text-base text-gray-300 max-w-lg leading-relaxed">
-          {content.description}
-        </p>
-
-        <!-- Event Info -->
-        <div class="flex flex-wrap gap-x-8 gap-y-3 text-base font-medium">
-          <div class="flex items-center gap-2 text-white">
-            <svg
-              class="w-5 h-5 text-primary-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-              ></path>
-            </svg>
-            <span>{isEs ? "18-19 Agosto, 2026" : "Aug 18-19, 2026"}</span>
-          </div>
-          <div class="flex items-center gap-2 text-white">
-            <svg
-              class="w-5 h-5 text-primary-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-            <span>{isEs ? "Ilo, Perú" : "Ilo, Peru"}</span>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="flex flex-wrap gap-4 pt-1">
-          <a
-            href={isEs ? "/es/register" : "/en/register"}
-            class="group inline-flex items-center gap-2 px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-full font-bold text-base transition-all duration-300 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 hover:-translate-y-0.5"
-          >
-            <span>{content.cta_primary}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-chevron-right-icon lucide-chevron-right w-5 h-5 transition-transform group-hover:translate-x-1"
-              ><path d="m9 18 6-6-6-6"></path></svg
-            >
-          </a>
-          <a
-            href={isEs ? "/es/schedule" : "/en/schedule"}
-            class="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 text-gray-300 hover:text-white hover:border-gray-500 rounded-full font-medium text-base transition-all hover:bg-white/5"
-          >
-            {content.cta_secondary}
-          </a>
-        </div>
-
-        <!-- Stats Row (Moved closer) -->
-        <div class="pt-1 border-t border-gray-800/60 max-w-lg">
-          <div class="grid grid-cols-3 gap-8">
-            {
-              content.stats.map(
-                (stat: { value: string; label: string }, index: number) => (
-                  <div
-                    class="animate-fade-in-up"
-                    style={`animation-delay: ${index * 0.1}s`}
-                  >
-                    <div class="text-2xl sm:text-3xl font-bold text-primary-500 font-heading">
-                      {stat.value}
-                    </div>
-                    <div class="text-xs text-gray-300 uppercase tracking-widest mt-1 font-semibold">
-                      {stat.label}
-                    </div>
-                  </div>
-                ),
-              )
-            }
-          </div>
+            {content.event_type}
+          </span>
         </div>
       </div>
 
-      <!-- Right: Chiribaya Image -->
-      <div
-        class="relative hidden lg:flex items-center justify-center lg:justify-end"
-      >
-        <div class="relative w-full max-w-[500px]">
-          <!-- Glow - Made softer -->
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div
-              class="w-[120%] h-[120%] rounded-full bg-primary-500/10 blur-[100px] animate-pulse-slow"
-            >
-            </div>
-          </div>
+      <!-- Title (Monolithic & Vibrant) -->
+      <div class="flex flex-col items-center">
+        <h1
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-[3.5rem] font-semibold text-white leading-tight tracking-tighter drop-shadow-2xl"
+        >
+          KHIPU<span
+            class="text-transparent bg-clip-text bg-linear-to-b from-primary-400 to-primary-600"
+            >x</span
+          > Ilo
+        </h1>
+        <div
+          class="w-24 md:w-40 h-1 md:h-2 bg-linear-to-r from-transparent via-primary-500 to-transparent mt-4 md:mt-8 rounded-full opacity-80 shadow-[0_0_20px_rgba(241,91,36,0.5)]"
+        >
+        </div>
+      </div>
 
-          <!-- Image with Breeze effect -->
-          <div class="relative z-10">
-            <img
-              src="/chiribaya.webp"
-              alt="Chiribaya Cultural Figure"
-              class="w-full h-auto chiribaya-breeze"
-            />
+      <!-- Subtitle -->
+      <p
+        class="text-base md:text-lg text-gray-100 max-w-3xl leading-relaxed font-light drop-shadow-md"
+      >
+        {content.description}
+      </p>
+
+      <!-- Event Info (Glass Pills) -->
+      <div
+        class="flex flex-wrap justify-center gap-4 text-sm md:text-base font-medium mt-4"
+      >
+        <div
+          class="flex items-center gap-3 text-white backdrop-blur-md bg-black/40 px-6 py-3 rounded-2xl border border-white/10 shadow-lg transition-colors hover:bg-black/60"
+        >
+          <svg
+            class="w-5 h-5 text-primary-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <span class="tracking-wide text-gray-200"
+            >{isEs ? "18-19 Agosto, 2026" : "Aug 18-19, 2026"}</span
+          >
+        </div>
+        <div
+          class="flex items-center gap-3 text-white backdrop-blur-md bg-black/40 px-6 py-3 rounded-2xl border border-white/10 shadow-lg transition-colors hover:bg-black/60"
+        >
+          <svg
+            class="w-5 h-5 text-primary-500"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          <span class="tracking-wide text-gray-200"
+            >{isEs ? "Ilo, Perú" : "Ilo, Peru"}</span
+          >
+        </div>
+      </div>
+
+      <!-- Call to Action Buttons -->
+      <div
+        class="flex flex-wrap justify-center gap-4 sm:gap-6 pt-2 w-full max-w-lg"
+      >
+        <a
+          href={isEs ? "/es/register" : "/en/register"}
+          class="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-white rounded-full font-bold text-lg transition-all duration-300 shadow-[0_0_20px_rgba(241,91,36,0.4)] hover:shadow-[0_0_40px_rgba(241,91,36,0.6)] hover:-translate-y-1 w-full sm:w-auto overflow-hidden"
+        >
+          <!-- Shimmer effect -->
+          <div
+            class="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer pointer-events-none"
+          >
           </div>
+          <span class="relative z-10">{content.cta_primary}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="relative z-10 w-5 h-5 transition-transform group-hover:translate-x-1"
+            ><path d="m9 18 6-6-6-6"></path></svg
+          >
+        </a>
+
+        <a
+          href={isEs ? "/es/schedule" : "/en/schedule"}
+          class="inline-flex items-center justify-center px-8 py-4 bg-white/5 border border-white/20 backdrop-blur-sm text-white rounded-full font-bold text-lg transition-all duration-300 hover:bg-white/10 hover:border-white/40 w-full sm:w-auto shadow-lg"
+        >
+          {content.cta_secondary}
+        </a>
+      </div>
+
+      <!-- Stats Row (Floating Glass Cards) -->
+      <div class="pt-6 md:pt-10 w-full max-w-4xl">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+          {
+            content.stats.map(
+              (stat: { value: string; label: string }, index: number) => (
+                <div
+                  class="animate-fade-in-up flex flex-col items-center justify-center p-6 md:p-8 rounded-3xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-500 hover:bg-white/10 hover:-translate-y-2 hover:border-primary-500/30 group"
+                  style={`animation-delay: ${index * 0.15 + 0.5}s`}
+                >
+                  <div class="text-3xl md:text-5xl font-black bg-clip-text text-transparent bg-linear-to-br from-white to-gray-400 font-heading tracking-tight mb-1 md:mb-2 group-hover:from-white group-hover:to-primary-200 transition-all duration-500 drop-shadow-lg">
+                    {stat.value}
+                  </div>
+                  <div class="text-xs sm:text-sm text-primary-400 uppercase tracking-[0.2em] font-bold text-center">
+                    {stat.label}
+                  </div>
+                </div>
+              ),
+            )
+          }
         </div>
       </div>
     </div>
@@ -175,46 +196,74 @@ const backgroundSymbols = [
 </section>
 
 <style>
-  /* Soft Breeze & Lighting Animation */
-  .chiribaya-breeze {
-    animation:
-      breeze-float 8s ease-in-out infinite,
-      soft-light 5s ease-in-out infinite alternate;
-    filter: drop-shadow(0 0 20px rgba(241, 91, 36, 0.1));
+  /* Custom Keyframes for Modern Polish */
+  .animate-slide-in-up {
+    animation: slide-in-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
-  @keyframes breeze-float {
-    0%,
-    100% {
-      transform: translateY(0) rotate(0deg);
-    }
-    50% {
-      transform: translateY(-15px) rotate(1deg);
-    }
-  }
-
-  @keyframes soft-light {
+  @keyframes slide-in-up {
     0% {
-      filter: drop-shadow(0 0 20px rgba(241, 91, 36, 0.15)) brightness(1);
+      opacity: 0;
+      transform: translateY(40px) scale(0.98);
     }
     100% {
-      filter: drop-shadow(0 0 40px rgba(241, 91, 36, 0.3)) brightness(1.05);
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
   }
 
-  @keyframes pulse-slow {
-    0%,
+  .animate-fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease-out 0.3s forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
     100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-orb-pulse {
+    animation: orb-pulse 8s ease-in-out infinite alternate;
+  }
+
+  .animate-orb-pulse-slow {
+    animation: orb-pulse 12s ease-in-out infinite alternate-reverse;
+  }
+
+  @keyframes orb-pulse {
+    0% {
+      transform: scale(0.8) translate(0, 0);
       opacity: 0.5;
-      transform: scale(1);
     }
-    50% {
+    100% {
+      transform: scale(1.2) translate(5%, 5%);
       opacity: 0.8;
-      transform: scale(1.05);
     }
   }
 
-  .animate-pulse-slow {
-    animation: pulse-slow 6s ease-in-out infinite;
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
   }
 </style>
