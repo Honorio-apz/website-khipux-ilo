@@ -20,9 +20,9 @@
     {
         "id": "2",
         "name": "Elías R. Ajata",
-        "role": "Lingüista y Activista Aymara",
+        "role": "Lingüista y Activista Digital de la Lengua Aymara | Creador de Aymar Yatiqaña",
         "image": "/keynotes/reynaldo.jpeg",
-        "bio": "Activista aymara boliviano. Conferencia: 'Ética de la IA y Soberanía de Datos en Comunidades Indígenas'. Garantiza el uso ético y apropiación tecnológica por parte de las comunidades. Legitimidad cultural.",
+        "bio": "Referente en la revitalización lingüística y el activismo digital en los Andes. Lingüista por la UPEA, Elías es el creador de uno de los ecosistemas digitales más influyentes para el aprendizaje del aymara, integrando redes sociales, blogs y plataformas multimedia para llevar su lengua materna a la era de Internet. Su trabajo se centra en la creación de recursos educativos innovadores —desde memes y videos hasta aplicaciones y materiales de animación— que permiten que las nuevas generaciones recuperen su identidad lingüística. Ha sido anfitrión de iniciativas globales como Rising Voices y es una voz clave en la discusión sobre la presencia de lenguas originarias en espacios tecnológicos y políticos.",
         "type": "keynote",
         "status": "confirmed"
     },
@@ -38,45 +38,45 @@
     {
         "id": "9",
         "name": "Keny Lazo",
-        "role": "Fundador Code en mi Cole | Sumatec",
+        "role": "CEO da Sumatec & Diretor de Startup Grind (Arequipa)",
         "image": "/keynotes/kennylazo.jpeg",
-        "bio": "Promotor de innovación. Taller: 'Identificación de Proyectos y Oportunidades'. Puente para que las ideas se conviertan en soluciones tecnológicas viables para las comunidades nativas.",
+        "bio": "Emprendedor social, abogado y estratega en economía digital. Como CEO de Sumatec y Co-Director de Startup Grind, Kenny es el motor que conecta el talento local con redes globales de innovación e inversión. Es el fundador de la iniciativa Code en mi Cole, un proyecto pionero que democratiza el pensamiento computacional en el Perú. Con experiencia en misiones tecnológicas a Silicon Valley, su visión integra el derecho, la tecnología y el liderazgo comunitario para transformar el ecosistema de startups en la región, promoviendo una cultura donde la innovación sea accesible para todos.",
         "type": "keynote",
         "status": "confirmed"
     },
     {
         "id": "5",
         "name": "Honorio Apaza",
-        "role": "AiMara Lab | Investigador IA",
+        "role": "Ingeniero de IA y Fundador de AiMARA Lab",
         "image": "/keynotes/honorioapaza.jpg",
-        "bio": "Docente universitario e investigador en IA. Cofundador de AiMara Lab. Investigador del proyecto de Traducción para las lenguas Nativas Peruanas.",
+        "bio": "Maestro en Ciencia de la Computación por la UNSA, especializado en el Procesamiento de Lenguaje Natural (NLP) aplicado a lenguas originarias. Como Investigador RENACYT, su trabajo se centra en el desarrollo de arquitecturas de traducción neuronal y la creación de corpus bilingües de alta precisión para la lengua aimara. A través de AiMARA Lab, lidera proyectos de investigación que integran la inteligencia artificial con la preservación lingüística",
         "type": "speaker",
         "status": "confirmed"
     },
     {
         "id": "6",
         "name": "Israel Chaparro",
-        "role": "Embajador de NVIDIA | Speaker Invitado",
+        "role": "NVIDIA Deep Learning Institute Certified Instructor | Investigador RENACYT",
         "image": "/keynotes/israel.jpeg",
-        "bio": "Taller: 'Introducción a la IA para el lenguaje natural: Conceptos Básicos y Herramientas'. Sesión práctica y didáctica para adentrarse en la IA.",
+        "bio": "Especialista en Inteligencia Artificial y Visión por Computador, reconocido como Instructor Certificado y Embajador del Deep Learning Institute de NVIDIA. Investigador calificado por CONCYTEC, Israel lidera proyectos de vanguardia en Deep Learning aplicados a la agricultura de precisión y la salud en el sur del Perú. Con una maestría en Ciencia de la Computación por la UCSP y múltiples patentes ante INDECOPI por dispositivos de IA de borde (Edge AI), es una figura clave en la transferencia tecnológica, capacitando a la próxima generación de ingenieros en el uso de herramientas de computación de alto rendimiento.",
         "type": "speaker",
         "status": "confirmed"
     },
     {
         "id": "7",
-        "name": "Brisayda Aruancca",
-        "role": "Investigadora Quechua | IA y NLP",
+        "name": "Brisayda Aruhuanca",
+        "role": "Comunicadora Aymara y Conductora de TV Perú (Jiwasanaka)",
         "image": "/keynotes/brisaydaaruancca.jpg",
-        "bio": "Especialista en IA y NLP para lengua Quechua. Líder influyente en la comunidad indígena.",
+        "bio": "Destacada educadora bilingüe y comunicadora, reconocida como la conductora del primer noticiero en lengua aimara de la historia del Perú, Jiwasanaka (TV Perú). Egresada con honores de la UPCH y becaria de PRONABEC, Brisayda es una referente nacional en la revitalización de lenguas originarias y la educación intercultural. Su labor ha sido fundamental para integrar la cosmovisión andina en los medios de comunicación masivos, liderando proyectos que protegen la herencia lingüística del Perú y promueven la autonomía del estudiante a través de la identidad cultural.",
         "type": "speaker",
         "status": "confirmed"
     },
     {
         "id": "8",
         "name": "Brigida Huahualuque",
-        "role": "Líder Comunitario Aymara",
+        "role": "Investigadora en Etnomatemática y Especialista en Educación Intercultural Bilingüe (EIB)",
         "image": "/keynotes/brigidahuahualuque.jpg",
-        "bio": "Coordinadora Outreach Comunitario. Intérprete, traductora y líder aymara reconocida por el Ministerio de Cultura.",
+        "bio": "Destacada educadora, investigadora y Yatichiri (maestra) de la lengua aymara, reconocida por la Universidad Nacional Mayor de San Marcos (UNMSM) por su incansable labor en la promoción de la identidad cultural. Con estudios de postgrado en la Cayetano Heredia (UPCH), Brígida es una autoridad en Etnomatemática, disciplina en la que investiga cómo los saberes ancestrales —como los diseños y formas geométricas en los tejidos aymaras— se integran en la educación moderna. Ha sido autora de textos oficiales para el Ministerio de Educación (MINEDU) y consultora en organismos internacionales como CARE Perú, liderando la vanguardia de la pedagogía intercultural en el país.",
         "type": "community",
         "status": "confirmed"
     }
