@@ -59,7 +59,7 @@
         "role": "NVIDIA Deep Learning Institute Certified Instructor | Investigador RENACYT",
         "image": "/keynotes/israel.jpeg",
         "bio": "Especialista en Inteligencia Artificial y Visión por Computador, reconocido como Instructor Certificado y Embajador del Deep Learning Institute de NVIDIA. Investigador calificado por CONCYTEC, Israel lidera proyectos de vanguardia en Deep Learning aplicados a la agricultura de precisión y la salud en el sur del Perú. Con una maestría en Ciencia de la Computación por la UCSP y múltiples patentes ante INDECOPI por dispositivos de IA de borde (Edge AI), es una figura clave en la transferencia tecnológica, capacitando a la próxima generación de ingenieros en el uso de herramientas de computación de alto rendimiento.",
-        "type": "speaker",
+        "type": "keynote",
         "status": "confirmed"
     },
     {
@@ -68,7 +68,7 @@
         "role": "Comunicadora Aymara y Conductora de TV Perú (Jiwasanaka)",
         "image": "/keynotes/brisaydaaruancca.jpg",
         "bio": "Destacada educadora bilingüe y comunicadora, reconocida como la conductora del primer noticiero en lengua aimara de la historia del Perú, Jiwasanaka (TV Perú). Egresada con honores de la UPCH y becaria de PRONABEC, Brisayda es una referente nacional en la revitalización de lenguas originarias y la educación intercultural. Su labor ha sido fundamental para integrar la cosmovisión andina en los medios de comunicación masivos, liderando proyectos que protegen la herencia lingüística del Perú y promueven la autonomía del estudiante a través de la identidad cultural.",
-        "type": "speaker",
+        "type": "keynote",
         "status": "confirmed"
     },
     {
