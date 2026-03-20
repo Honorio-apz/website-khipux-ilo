@@ -3,13 +3,30 @@
         "name_es": "Dirección General",
         "name_en": "General Direction",
         "coordinator": {
-            "name": "Honorio Apaza Alanoca",
-            "role_es": "Director del Comité Organizador",
+            "name": "Honorio Apaza ",
+            "role_es": "Director Gneral de Organización",
             "role_en": "Organizing Committee Director",
-            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
-            "bio": "Director del Comité Organizador. Docente universitario e investigador en IA. Cofundador de AiMara Lab.",
+            "image": "https://hapaza.aimaralab.com/honorio.png",
+            "bio": "Director Gneral de Organización",
             "affiliation": "AiMara Lab"
         },
+        {
+        "name": "Allison Inguer Reynoso Serra",
+                "role_es": "Coordinadora de Contenido y Programación",
+                "role_en": "Content & Programming Coordinator",
+                "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop",
+                "bio": "Coordinadora de Contenido y Programación. Experta en NLP, HTR y traducción automática neuronal para el aymara.",
+                "affiliation": "AiMara Lab"
+        },
+        {
+            "name": "Brigida Huahualuque Mamani",
+                "role_es": "Coordinadora Outreach Comunitario",
+                "role_en": "Community Outreach Coordinator",
+                "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop",
+                "bio": "Intérprete, traductora y líder aymara reconocida por el Ministerio de Cultura.",
+                "affiliation": "Líder Comunitario"
+        },
+        
         "leads": [
             {
                 "name": "Allison Inguer Reynoso Serra",
