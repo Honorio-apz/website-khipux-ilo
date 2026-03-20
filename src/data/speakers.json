@@ -28,10 +28,10 @@
     },
     {
         "id": "4",
-        "name": "Arturo Oncevay",
-        "role": "AI Researcher Senior | JPMorgan Chase",
+        "name": "Arturo Oncevay, PhD",
+        "role": "Senior AI Researcher en JPMorgan Chase (Londres)",
         "image": "/keynotes/arturooncevay.jpeg",
-        "bio": "Investigador en IA. Conferencia: 'El Perú es Multilingüe... Desafíos de Traducción Automática Inclusiva'. Lidera proyectos buscando la democratización tecnológica integrandola en la era digital.",
+        "bio": "Arturo Oncevay es un destacado investigador peruano en Inteligencia Artificial, especializado en Procesamiento de Lenguaje Natural (NLP) para lenguas de bajos recursos. Doctor en Informática por la University of Edinburgh e Ingeniero por la PUCP, actualmente se desempeña como Senior AI Researcher en JPMorgan Chase (Londres). Su trabajo es fundamental para la democratización tecnológica en los Andes, liderando proyectos de traducción automática que integran lenguas como el quechua, aimara y lenguas amazónicas en la era digital, logrando el reconocimiento de instituciones globales como NVIDIA y AWS.",
         "type": "keynote",
         "status": "confirmed"
     },
