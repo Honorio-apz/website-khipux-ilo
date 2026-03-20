@@ -2,18 +2,18 @@
     {
         "id": "1",
         "name": "Norman Valdez",
-        "role": "AI ethics & policy | BrainTrainr CEO | CFC Fellow | FRSA | CAIDP Team Leader | Digital equity",
+        "role": "CEO de BrainTrainr & Emerging Technology Fellow (Canadá)",
         "image": "/keynotes/normanvaldez.jpeg",
-        "bio": "Norman Valdez, FRSA es líder tecnológico, educador y estratega de impacto social. Es Director de Tecnología, Marketing y Comunicaciones en CERIC, Emerging Technology Fellow en Community Foundations of Canada, y CEO y cofundador de BrainTrainr, una organización sin fines de lucro que democratiza la educación en IA. Como Fellow de la RSA y Team Leader y miembro del Center for AI and Digital Policy (CAIDP), trabaja en la intersección entre IA, ética y equidad digital, apoyando a organizaciones y comunidades a adoptar IA de forma responsable y prosperar en un mundo impulsado por la IA.",
+        "bio": "Líder con más de 15 años de trayectoria en la intersección de la Inteligencia Artificial y la tecnología ética. Posee una maestría en Sistemas de Información por la University of Toronto y actualmente se desempeña como Emerging Technology Fellow en Community Foundations of Canada. Como CEO y cofundador de BrainTrainr, Norman lidera la democratización del acceso a la IA, impulsando marcos de trabajo que priorizan la equidad, la justicia social y el uso responsable de algoritmos. Su visión estratégica ha sido clave para transformar organizaciones de impacto social mediante soluciones tecnológicas que integran la sostenibilidad y el bienestar comunitario en la era digital.",
         "type": "keynote",
         "status": "confirmed"
     },
     {
         "id": "3",
-        "name": "Omar Flórez",
-        "role": "AI Researcher | LatamGPT CENIA",
+        "name": "Omar Flórez, PhD",
+        "role": "Senior AI Research Scientist | Ex-Twitter Cortex & Intel Labs (Silicon Valley)",
         "image": "/keynotes/omarflores.jpeg",
-        "bio": "Científico peruano y líder global en IA. Conferencia: 'Desarrollo de PNL para Lenguas Latinoamérica'. Dirige el pre-entrenamiento de LatamGPT y conecta el evento con la vanguardia tecnológica.",
+        "bio": "Doctor en Inteligencia Artificial por la Utah State University y uno de los investigadores latinos más influyentes en Silicon Valley. Ha liderado proyectos estratégicos en Twitter Cortex, Intel Labs y Capital One, donde desarrolló patentes y algoritmos de Machine Learning para sistemas de comunicación a gran escala y procesamiento de lenguaje natural. Miembro del comité técnico de la Estrategia Nacional de IA y co-fundador de LatinX in AI, Omar es un referente global en la democratización del conocimiento técnico, reconocido con el IBM Research Innovation Award y por su labor en la creación del primer modelo fundacional de lenguaje para Latinoamérica (LatamGPT).",
         "type": "keynote",
         "status": "confirmed"
     },
