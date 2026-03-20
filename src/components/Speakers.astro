@@ -10,7 +10,7 @@ const { locale } = Astro.props;
 const isEs = locale === "es";
 
 const filteredSpeakers = speakersData.filter(s => s.type === "keynote" || s.type === "speaker");
-const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
+const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers, ...filteredSpeakers];
 ---
 
 <section id="speakers" class="py-32 bg-black relative overflow-hidden">
@@ -18,13 +18,11 @@ const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
     <!-- Header synced with Sponsors Style -->
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-20 px-4">
       <div>
-        <div class="inline-flex items-center gap-3 text-primary-500 font-bold mb-4">
+        <div class="text-overline">
           <div class="w-8 h-[2px] bg-primary-500"></div>
-          <span class="uppercase tracking-widest text-xs">
-            {isEs ? "Nuestros Expertos" : "Our Experts"}
-          </span>
+          {isEs ? "Nuestros Expertos" : "Our Experts"}
         </div>
-        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight uppercase tracking-tight">
+        <h2 class="title-section">
           {isEs ? "Ponentes" : "Speakers"}
         </h2>
       </div>
@@ -39,24 +37,27 @@ const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
       </a>
     </div>
 
-    <!-- Speakers Slider - Infinite CSS Scroll -->
+    <!-- Speakers Slider - Single Row Infinite Scroll -->
     <div class="relative w-full overflow-hidden flex flex-col items-center">
       <!-- Gradient Masks for smooth entry/exit edges -->
       <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-linear-to-r from-black to-transparent z-30 pointer-events-none"></div>
       <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-linear-to-l from-black to-transparent z-30 pointer-events-none"></div>
       
       <div class="speaker-slider w-full">
-        <div class="speaker-track flex items-start gap-12 sm:gap-16 w-max py-4 hover:[animation-play-state:paused] pr-12">
+        <div class="speaker-track flex items-start gap-12 sm:gap-28 w-max py-8 hover:[animation-play-state:paused] pr-20">
           {
             infiniteSpeakers.map((speaker, index) => (
-              <a href={`/${locale}/speakers#${speaker.id}`} class="group relative flex flex-col items-center cursor-pointer shrink-0 w-32 md:w-48 transition-transform hover:scale-105">
-                <div class="relative w-30 h-30 md:w-40 md:h-40 mb-8 mx-auto">
-                  <!-- Decorative Margin Frame (Inverse propagation effect) -->
-                  <div class="absolute inset-[-25%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center">
+              <a href={`/${locale}/speakers#${speaker.id}`} class="group relative flex flex-col items-center cursor-pointer shrink-0 w-48 md:w-64 transition-transform hover:scale-105">
+                <div class="relative w-32 h-32 md:w-44 md:h-44 mb-10 mx-auto">
+                  <!-- Decorative Margin Frame (Unique rotation per index) -->
+                  <div 
+                    class="absolute inset-[-20%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center"
+                    style={`transform: rotate(${(index * 35) % 360}deg)`}
+                  >
                     <img
                       src="/margen.webp"
                       alt=""
-                      class="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(216,81,32,0.4)]"
+                      class="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(241,91,36,0.4)]"
                     />
                   </div>
                   
@@ -71,12 +72,12 @@ const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
                   </div>
                 </div>
 
-                <!-- Speaker Info (Outside for better legibility) -->
-                <div class="text-center z-20 w-full shrink-0">
-                  <h3 class="font-bold text-md md:text-lg text-white mb-2 group-hover:text-primary-400 transition-colors uppercase tracking-tight wrap-break-word">
+                <!-- Speaker Info -->
+                <div class="text-center z-20 w-full shrink-0 px-4">
+                  <h3 class="font-bold text-base md:text-xl text-white mb-2 group-hover:text-primary-400 transition-colors uppercase tracking-tight wrap-break-word drop-shadow-md">
                     {speaker.name}
                   </h3>
-                  <p class="text-[10px] md:text-xs text-primary-500 font-bold uppercase">
+                  <p class="text-[10px] md:text-xs text-primary-500 font-bold uppercase tracking-widest">
                     {speaker.role}
                   </p>
                 </div>
@@ -105,10 +106,9 @@ const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
     width: 100%;
   }
 
-  /* We double the array so when we translate -50%, we cleanly loop into the copy */
+  /* We use 33.33% because we tripled the array for a smoother loop */
   .speaker-track {
-    animation: scroll-left 40s linear infinite;
-    /* Optimize animation paint flow */
+    animation: scroll-left 50s linear infinite;
     will-change: transform; 
   }
 
@@ -117,7 +117,7 @@ const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers];
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%);
+      transform: translateX(-33.33%);
     }
   }
 

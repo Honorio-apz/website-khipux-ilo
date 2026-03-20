@@ -1,21 +1,21 @@
 ---
 interface Props {
-    title: string;
-    description?: string;
-    image?: string;
-    article?: boolean;
+  title: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
 }
 
 const {
-    title,
-    description = "KHIPUx Ilo 2026 - AI meets Aymara Community. A leading AI conference in Latin America.",
-    image = "/images/social-share.jpg", // Default image needs to exist or be created
-    article = false,
+  title,
+  description = "KHIPUx Ilo 2026 - AI meets Aymara Community. A leading AI conference in Latin America.",
+  image = "/images/social-share.jpg", // Default image needs to exist or be created
+  article = false,
 } = Astro.props;
 
 const siteUrl = Astro.site
-    ? Astro.site.toString()
-    : "https://khipux.aimaralab.com";
+  ? Astro.site.toString()
+  : "https://khipux.aimaralab.com";
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const socialImageURL = new URL(image, siteUrl);
 ---
@@ -53,50 +53,50 @@ const socialImageURL = new URL(image, siteUrl);
 
 <!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json" is:inline>
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "name": "Khipu",
-                "url": "https://khipu.ai",
-                "logo": "https://khipux.aimaralab.com/khipu_logo.webp",
-                "sameAs": [
-                    "https://twitter.com/khipuai",
-                    "https://linkedin.com/company/khipu",
-                    "https://youtube.com/@khipu",
-                    "https://instagram.com/khipuai"
-                ]
-            },
-            {
-                "@type": "Event",
-                "name": "KHIPUx Ilo 2026",
-                "startDate": "2026-08-18",
-                "endDate": "2026-08-19",
-                "eventStatus": "https://schema.org/EventScheduled",
-                "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
-                "location": {
-                    "@type": "Place",
-                    "name": "Universidad Nacional de Moquegua",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Ilo, Moquegua",
-                        "addressLocality": "Ilo",
-                        "addressRegion": "Moquegua",
-                        "addressCountry": "PE"
-                    }
-                },
-                "image": [
-                    "https://khipux.aimaralab.com/khipu_logo.webp",
-                    "https://khipux.aimaralab.com/chiribaya.webp"
-                ],
-                "description": "Fusionando la Inteligencia Artificial con la comunidad Aymara. Evento híbrido: presencial y virtual.",
-                "organizer": {
-                    "@type": "Organization",
-                    "name": "Khipu",
-                    "url": "https://khipu.ai"
-                }
-            }
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Khipu",
+        "url": "https://khipu.ai",
+        "logo": "https://khipux.aimaralab.com/khipu_logo.webp",
+        "sameAs": [
+          "https://twitter.com/khipuai",
+          "https://www.linkedin.com/company/khipu-ai/",
+          "https://youtube.com/@khipu",
+          "https://instagram.com/khipuai"
         ]
-    }
+      },
+      {
+        "@type": "Event",
+        "name": "KHIPUx Ilo 2026",
+        "startDate": "2026-08-18",
+        "endDate": "2026-08-19",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Universidad Nacional de Moquegua",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ilo, Moquegua",
+            "addressLocality": "Ilo",
+            "addressRegion": "Moquegua",
+            "addressCountry": "PE"
+          }
+        },
+        "image": [
+          "https://khipux.aimaralab.com/khipu_logo.webp",
+          "https://khipux.aimaralab.com/chiribaya.webp"
+        ],
+        "description": "Fusionando la Inteligencia Artificial con la comunidad Aymara. Evento híbrido: presencial y virtual.",
+        "organizer": {
+          "@type": "Organization",
+          "name": "Khipu",
+          "url": "https://khipu.ai"
+        }
+      }
+    ]
+  }
 </script>

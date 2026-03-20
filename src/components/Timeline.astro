@@ -1,0 +1,48 @@
+---
+interface TimelineItem {
+  date: string;
+  label: string;
+  status?: "past" | "active" | "upcoming";
+}
+
+interface Props {
+  items: TimelineItem[];
+  title?: string;
+}
+
+const { items, title } = Astro.props;
+---
+
+<div class="space-y-12 relative">
+  {title && (
+    <h3 class="text-xl font-bold text-primary-500 uppercase tracking-widest mb-10 text-center">
+      {title}
+    </h3>
+  )}
+  
+  <div class="relative">
+    {/* Vertical Line */}
+    <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-white/10 -translate-x-1/2 z-0 hidden md:block"></div>
+    
+    <div class="space-y-12">
+      {items.map((item, index) => (
+        <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-0">
+          {/* Label (Desktop Left) */}
+          <div class={`flex-1 w-full text-left md:text-right md:pr-12 ${index % 2 !== 0 ? 'md:order-3 md:text-left md:pl-12 md:pr-0' : 'md:order-1'}`}>
+            <h4 class="text-white font-bold text-lg leading-tight">{item.label}</h4>
+          </div>
+
+          {/* Dot (Center) */}
+          <div class="md:order-2 relative flex items-center justify-center w-8 h-8 rounded-full bg-black border-2 border-primary-500/30 z-20 group-hover:border-primary-500 transition-colors">
+            <div class="w-3 h-3 rounded-full bg-primary-500 shadow-[0_0_15px_rgba(241,91,36,0.6)]"></div>
+          </div>
+
+          {/* Date (Desktop Right) */}
+          <div class={`flex-1 w-full text-left md:pl-12 ${index % 2 !== 0 ? 'md:order-1 md:text-right md:pr-12 md:pl-0' : 'md:order-3'}`}>
+            <span class="text-primary-500 font-black text-sm uppercase tracking-tighter opacity-80">{item.date}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

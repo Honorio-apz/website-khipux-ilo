@@ -1,127 +1,128 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import registrationData from "../../data/registration.json";
+import Timeline from "../../components/Timeline.astro";
+import Wrapper from "../../components/Wrapper.astro";
 
 export function getStaticPaths() {
-    return [{ params: { lang: "es" } }, { params: { lang: "en" } }];
+  return [{ params: { lang: "es" } }, { params: { lang: "en" } }];
 }
 
 const { lang } = Astro.params;
 const isEs = lang === "es";
 
 const content = isEs ? registrationData.es : registrationData.en;
+const data = content.general;
 const steps = content.steps;
-// Using a placeholder form URL for now, can be updated later
-const FORM_URL =
-    "https://docs.google.com/forms/d/e/1FAIpQLSe-PLACEHOLDER/viewform";
 ---
 
 <Layout
-    title={isEs ? "Registro - Khipux" : "Registration - Khipux"}
-    lang={lang}
-    description={content.description}
+  title={`${data.title} - Khipux`}
+  lang={lang}
+  description={data.description}
 >
-    <section class="pt-32 pb-24 bg-black min-h-screen">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div
-                class="text-center mb-24 transition-opacity duration-700 ease-out"
-                id="header-section"
-            >
-                <div
-                    class="inline-flex items-center gap-3 text-primary-500 font-bold mb-4"
-                >
-                    <div class="w-12 h-[2px] bg-primary-500"></div>
-                    <span class="uppercase tracking-widest text-sm">
-                        {content.subtitle}
-                    </span>
-                    <div class="w-12 h-[2px] bg-primary-500"></div>
-                </div>
-                <h1
-                    class="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-heading uppercase tracking-tight"
-                >
-                    {content.title}
-                </h1>
-                <p
-                    class="mt-6 text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed"
-                >
-                    {content.description}
-                </p>
-            </div>
+  <section class="pt-32 pb-24 bg-black min-h-screen relative overflow-hidden">
+    {/* Background Decorative Elements */}
+    <div
+      class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-500/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-500/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2"
+    >
+    </div>
 
-            <div class="relative max-w-4xl mx-auto space-y-16">
-                {/* Connection Vertical Line */}
-                <div
-                    class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-primary-500/30 to-transparent -translate-x-1/2 z-0"
-                >
-                </div>
-
-                {
-                    steps.map((step, index) => (
-                        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center group">
-                            {/* Number Circle (Desktop Center) */}
-                            <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-black border-2 border-primary-500/50 items-center justify-center font-bold text-primary-500 shadow-[0_0_20px_rgba(216,81,32,0.2)] group-hover:scale-110 group-hover:border-primary-500 group-hover:bg-primary-500 group-hover:text-black transition-all duration-500">
-                                {step.number}
-                            </div>
-
-                            {/* Mobile Number */}
-                            <div class="md:hidden flex items-center gap-4 mb-2">
-                                <span class="text-4xl font-bold text-primary-500 font-heading opacity-50">
-                                    {step.number}
-                                </span>
-                                <div class="h-px flex-1 bg-white/10" />
-                            </div>
-
-                            {/* Content: Alternating Sides */}
-                            <div
-                                class={`bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-primary-500/30 transition-all duration-300 hover:bg-white/[0.07] ${index % 2 === 0 ? "md:order-1 md:text-right md:mr-12" : "md:order-2 md:ml-12"}`}
-                            >
-                                <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
-                                    {step.title}
-                                </h3>
-                                <p class="text-gray-400 leading-relaxed">
-                                    {step.description}
-                                </p>
-                            </div>
-
-                            {/* Empty needed for grid balance */}
-                            <div
-                                class={`hidden md:block ${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}
-                            />
-                        </div>
-                    ))
-                }
-            </div>
-
-            <div class="mt-24 text-center">
-                <div
-                    class="inline-block p-[2px] rounded-full bg-linear-to-r from-primary-500 via-orange-400 to-primary-600 shadow-[0_0_50px_rgba(216,81,32,0.4)] hover:shadow-[0_0_80px_rgba(216,81,32,0.6)] transition-all duration-500 hover:scale-105"
-                >
-                    <a
-                        href={FORM_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="block px-12 py-6 bg-black rounded-full font-bold text-xl md:text-2xl text-white hover:bg-white hover:text-black transition-colors duration-300 items-center gap-3"
-                    >
-                        {content.cta}
-                        <svg
-                            class="inline-block w-6 h-6 ml-2"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                            ></path>
-                        </svg>
-                    </a>
-                </div>
-                <p class="mt-6 text-sm text-gray-500">
-                    {content.note}
-                </p>
-            </div>
+    <Wrapper>
+      <div class="max-w-4xl mx-auto">
+        {/* Header */}
+        <div class="text-center mb-20 animate-fade-in">
+          <div class="text-overline justify-center">
+            <div class="w-12 h-[2px] bg-primary-500"></div>
+            {data.subtitle}
+            <div class="w-12 h-[2px] bg-primary-500"></div>
+          </div>
+          <h1 class="title-section mb-8">{data.title}</h1>
+          <p class="text-body max-w-2xl mx-auto">
+            {data.description}
+          </p>
         </div>
-    </section>
+
+        {/* Main Content Card - Notice Only */}
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-10 md:p-16 mb-20 shadow-2xl backdrop-blur-sm text-center"
+        >
+          <div
+            class="w-20 h-20 bg-primary-500/10 rounded-2xl flex items-center justify-center mx-auto mb-8"
+          >
+            <svg
+              class="w-10 h-10 text-primary-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+              ></path>
+            </svg>
+          </div>
+          <span class="text-overline justify-center mb-6">
+            {isEs ? "Aviso Importante" : "Important Notice"}
+          </span>
+          <h2 class="title-card !text-2xl md:!text-4xl mb-6 tracking-tight leading-tight">
+            {
+              isEs
+                ? "Se está trabajando en becas para la gestión de alumnos y ex-alumnos"
+                : "Scholarships for students and alumni are currently in development"
+            }
+          </h2>
+          <p class="text-body mb-10 max-w-2xl mx-auto">
+            {
+              isEs
+                ? "Muy pronto abriremos el proceso oficial. Por favor, mantente atento a nuestras redes sociales para las fechas de lanzamiento."
+                : "The official process will open very soon. Please stay tuned to our social media channels for the launch dates."
+            }
+          </p>
+          <div class="flex justify-center gap-6">
+            <a
+              href="https://twitter.com/khipuai"
+              target="_blank"
+              class="text-gray-400 hover:text-primary-500 transition-colors"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                ><path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path></svg
+              >
+            </a>
+            <a
+              href="https://www.linkedin.com/company/khipu-ai/"
+              target="_blank"
+              class="text-gray-400 hover:text-primary-500 transition-colors"
+            >
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                ><path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path></svg
+              >
+            </a>
+          </div>
+        </div>
+
+        {/* Commented sections for future use */}
+        {
+          /* 
+                <div class="hidden">
+                    <div class="mb-32 px-4">
+                        <Timeline items={data.timeline} title={data.timeline_title} />
+                    </div>
+                    ...rest of sections...
+                </div>
+                */
+        }
+      </div>
+    </Wrapper>
+  </section>
 </Layout>

@@ -127,7 +127,34 @@ html {
         animation: fade-in-up 0.6s ease-out forwards;
     }
 
-    /* Staggered animation delays */
+    /* Global Typography Classes */
+@layer components {
+    .title-hero {
+        @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.9] text-white;
+    }
+
+    .title-section {
+        @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight leading-tight text-white;
+    }
+
+    .title-card {
+        @apply text-xl md:text-2xl font-bold uppercase tracking-tight text-white;
+    }
+
+    .text-overline {
+        @apply flex items-center gap-3 text-primary-500 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs mb-4;
+    }
+
+    .text-body {
+        @apply text-base md:text-lg text-gray-400 leading-relaxed;
+    }
+
+    .text-small {
+        @apply text-sm text-gray-500 leading-normal;
+    }
+}
+
+/* Staggered animation delays */
     .delay-100 { animation-delay: 0.1s; }
     .delay-200 { animation-delay: 0.2s; }
     .delay-300 { animation-delay: 0.3s; }

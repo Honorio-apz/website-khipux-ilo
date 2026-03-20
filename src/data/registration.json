@@ -1,50 +1,140 @@
 {
     "es": {
-        "title": "Proceso de Registro",
-        "subtitle": "Pasos para participar",
-        "description": "KHIPUx Ilo 2026 busca reunir a una comunidad diversa y apasionada. Debido a la capacidad limitada, utilizamos un proceso de selección para garantizar una participación equilibrada.",
+        "title": "Registro y Becas",
+        "subtitle": "Khipu Ilo 2026",
+        "description": "El evento ofrece dos modalidades de inscripción para adaptarnos a las necesidades de cada participante.",
+        "scholarship": {
+            "title": "Postulación a Becas",
+            "subtitle": "Apoyo a la Movilidad",
+            "description": "Destinado a estudiantes e investigadores de regiones distantes. La beca cubre traslado y alojamiento.",
+            "cta": "Postular ahora",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSe-BECA/viewform",
+            "timeline_title": "Fechas Clave de Becas",
+            "timeline": [
+                {
+                    "date": "15 de Abril, 2026",
+                    "label": "Lanzamiento de Formulario",
+                    "status": "upcoming"
+                },
+                {
+                    "date": "15 de Mayo, 2026",
+                    "label": "Cierre de Postulaciones",
+                    "status": "upcoming"
+                },
+                {
+                    "date": "1 de Junio, 2026",
+                    "label": "Notificación de Resultados",
+                    "status": "upcoming"
+                }
+            ]
+        },
+        "general": {
+            "title": "Registro General",
+            "subtitle": "Participación Gratuita",
+            "description": "El registro es gratuito. Se recomienda para participantes locales o autónomos. Lanzamiento posterior al de becas.",
+            "cta": "Registrarse gratis",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSe-REGISTRO/viewform",
+            "timeline_title": "Fechas de Registro General",
+            "timeline": [
+                {
+                    "date": "1 de Junio, 2026",
+                    "label": "Apertura de Registros",
+                    "status": "upcoming"
+                },
+                {
+                    "date": "30 de Junio, 2026",
+                    "label": "Cierre de Inscripciones",
+                    "status": "upcoming"
+                }
+            ]
+        },
+        "steps_title": "Proceso Común",
         "steps": [
             {
                 "number": "01",
-                "title": "Pre-inscripción",
-                "description": "Completa el formulario de solicitud con tus datos personales, experiencia e interés en la intersección de IA y lenguas nativas. No se requiere pago en esta etapa."
+                "title": "Solicitud",
+                "description": "Registra tus datos y área de interés."
             },
             {
                 "number": "02",
-                "title": "Evaluación del Comité",
-                "description": "Nuestro comité revisará todas las solicitudes. Se dará prioridad a estudiantes, investigadores y miembros de comunidades nativas, buscando equidad de género y geográfica."
+                "title": "Evaluación",
+                "description": "Revisamos cada perfil para asegurar diversidad."
             },
             {
                 "number": "03",
-                "title": "Confirmación y Pago",
-                "description": "Los seleccionados recibirán un correo electrónico de aceptación con las instrucciones para realizar el pago de la inscripción (si corresponde) y confirmar su plaza."
+                "title": "Confirmación",
+                "description": "Recibe tu ticket de acceso por email."
             }
         ],
-        "cta": "Ir al Formulario de Solicitud",
-        "note": "El formulario se abrirá en una nueva pestaña."
+        "note": "Ambos procesos requieren una confirmación final por correo electrónico."
     },
     "en": {
-        "title": "Registration Process",
-        "subtitle": "Steps to participate",
-        "description": "KHIPUx Ilo 2026 brings together a diverse and passionate community. Due to limited capacity, we use a selection process to ensure balanced participation.",
+        "title": "Registration & Scholarships",
+        "subtitle": "Khipu Ilo 2026",
+        "description": "The event offers two modalities of participation to suit every participant's needs.",
+        "scholarship": {
+            "title": "Scholarship Application",
+            "subtitle": "Mobility Support",
+            "description": "Aimed at students and researchers from distant regions. The scholarship covers travel and accommodation.",
+            "cta": "Apply now",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSe-BECA/viewform",
+            "timeline_title": "Scholarship Timeline",
+            "timeline": [
+                {
+                    "date": "April 15, 2026",
+                    "label": "Form Launch",
+                    "status": "upcoming"
+                },
+                {
+                    "date": "May 15, 2026",
+                    "label": "Application Deadline",
+                    "status": "upcoming"
+                },
+                {
+                    "date": "June 1, 2026",
+                    "label": "Results Notification",
+                    "status": "upcoming"
+                }
+            ]
+        },
+        "general": {
+            "title": "General Registration",
+            "subtitle": "Free Participation",
+            "description": "Registration is free. Recommended for local or self-funded participants. Launching after the scholarship phase.",
+            "cta": "Register for free",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSe-REGISTRO/viewform",
+            "timeline_title": "General Registration Timeline",
+            "timeline": [
+                {
+                    "date": "June 1, 2026",
+                    "label": "Registration Opening",
+                    "status": "upcoming"
+                },
+                {
+                    "date": "June 30, 2026",
+                    "label": "Registration Closing",
+                    "status": "upcoming"
+                }
+            ]
+        },
+        "steps_title": "Common Process",
         "steps": [
             {
                 "number": "01",
-                "title": "Pre-registration",
-                "description": "Complete the application form with your personal details, experience, and interest in the intersection of AI and native languages. No payment is required at this stage."
+                "title": "Application",
+                "description": "Register your details and area of interest."
             },
             {
                 "number": "02",
-                "title": "Committee Evaluation",
-                "description": "Our committee will review all applications. Priority is given to students, researchers, and native community members, aiming for gender and geographic balance."
+                "title": "Evaluation",
+                "description": "We review each profile to ensure diversity."
             },
             {
                 "number": "03",
-                "title": "Confirmation & Payment",
-                "description": "Selected participants will receive an acceptance email with instructions to pay the registration fee (if applicable) and confirm their spot."
+                "title": "Confirmation",
+                "description": "Receive your access ticket via email."
             }
         ],
-        "cta": "Go to Application Form",
-        "note": "The form will open in a new tab."
+        "note": "Both processes require final confirmation via email."
     }
 }
