@@ -10,7 +10,7 @@
     },
     {
         "id": "3",
-        "name": "Omar Flórez, PhD",
+        "name": "Omar Flórez",
         "role": "Senior AI Research Scientist | Ex-Twitter Cortex & Intel Labs (Silicon Valley)",
         "image": "/keynotes/omarflores.jpeg",
         "bio": "Doctor en Inteligencia Artificial por la Utah State University y uno de los investigadores latinos más influyentes en Silicon Valley. Ha liderado proyectos estratégicos en Twitter Cortex, Intel Labs y Capital One, donde desarrolló patentes y algoritmos de Machine Learning para sistemas de comunicación a gran escala y procesamiento de lenguaje natural. Miembro del comité técnico de la Estrategia Nacional de IA y co-fundador de LatinX in AI, Omar es un referente global en la democratización del conocimiento técnico, reconocido con el IBM Research Innovation Award y por su labor en la creación del primer modelo fundacional de lenguaje para Latinoamérica (LatamGPT).",
@@ -28,7 +28,7 @@
     },
     {
         "id": "4",
-        "name": "Arturo Oncevay, PhD",
+        "name": "Arturo Oncevay",
         "role": "Senior AI Researcher en JPMorgan Chase (Londres)",
         "image": "/keynotes/arturooncevay.jpeg",
         "bio": "Doctor por la University of Edinburgh y experto global en Inteligencia Artificial (NLP) para lenguas originarias. Actualmente lidera la investigación avanzada en JPMorgan Chase (Londres), donde combina tecnología de vanguardia con la democratización digital de los Andes y la Amazonía. Su trabajo en traducción automática ha sido reconocido por gigantes tecnológicos como NVIDIA y AWS, posicionándolo como la figura clave que integra la herencia lingüística del Perú en la frontera de la IA moderna.",
