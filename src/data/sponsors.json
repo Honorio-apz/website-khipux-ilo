@@ -19,48 +19,8 @@
     ],
     "platinum": [
         {
-            "name": "Google",
-            "logo": "/sponsors/google.png"
-        },
-        {
-            "name": "Google DeepMind",
-            "logo": "/sponsors/deepmind-white.webp"
-        },
-        {
-            "name": "Microsoft",
-            "logo": "/sponsors/microsoft.webp"
-        },
-        {
-            "name": "Apple",
-            "logo": "/sponsors/apple.png"
-        }
-    ],
-    "gold": [
-        {
-            "name": "Centro Nacional de Inteligencia Artificial",
-            "logo": "/sponsors/Logo-CENIA-v1-1-1024x434.png"
-        },
-        {
-            "name": "AMD",
-            "logo": "/sponsors/amd.avif"
-        },
-        {
-            "name": "Cohere",
-            "logo": "/sponsors/cohere.png"
-        },
-        {
-            "name": "Mistral AI",
-            "logo": "/sponsors/mistral.svg"
-        },
-        {
-            "name": "AnyoneAI",
-            "logo": "/sponsors/anyoneai-logo.png"
-        }
-    ],
-    "silver": [
-        {
-            "name": "NVIDIA Deep Learning Institute",
-            "logo": "/sponsors/DLI-Logo.png"
+            "name": "Khipu",
+            "logo": "/sponsors/khipu.png"
         },
         {
             "name": "Brain Trainr",
@@ -69,6 +29,18 @@
         {
             "name": "Unity",
             "logo": "/sponsors/unity.png"
+        }
+    ],
+    "gold": [
+        {
+            "name": "NVIDIA Deep Learning Institute",
+            "logo": "/sponsors/DLI-Logo.png"
+        }
+    ],
+    "silver": [
+        {
+            "name": "Centro Nacional de Inteligencia Artificial",
+            "logo": "/sponsors/Logo-CENIA-v1-1-1024x434.png"
         }
     ],
     "bronze": []
