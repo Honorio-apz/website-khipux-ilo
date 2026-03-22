@@ -7,8 +7,8 @@
       "name": "Comité Organizador",
       "members": [
         { "name": "Honorio Apaza", "role": "Director del Comité Organizador", "image": "https://www.aimaralab.com/team/honorio.png" },
-        { "name": "Allison Reynoso", "role": "Coordinadora General", "image": "https://www.aimaralab.com/team/allison.png" },
-        { "name": "Brigida Huahualuque", "role": "Outreach Comunitario" },
+        { "name": "Allison Reynoso", "role": "Coordinadora de Contenido y Programación", "image": "https://www.aimaralab.com/team/allison.png" },
+        { "name": "Brigida Huahualuque", "role": "Coordinadora de Outreach Comunitario" },
         { "name": "Luciana Benotti", "role": "Mentora Estratégica" }
       ]
     },
@@ -56,8 +56,8 @@
       "name": "Organizing Committee",
       "members": [
         { "name": "Honorio Apaza", "role": "Organizing Committee Director", "image": "https://www.aimaralab.com/team/honorio.png" },
-        { "name": "Allison Reynoso", "role": "General Coordinator", "image": "https://www.aimaralab.com/team/allison.png" },
-        { "name": "Brigida Huahualuque", "role": "Community Outreach" },
+        { "name": "Allison Reynoso", "role": "Content and Programming Coordinator", "image": "https://www.aimaralab.com/team/allison.png" },
+        { "name": "Brigida Huahualuque", "role": "Community Outreach Coordinator" },
         { "name": "Luciana Benotti", "role": "Strategic Mentor" }
       ]
     },
