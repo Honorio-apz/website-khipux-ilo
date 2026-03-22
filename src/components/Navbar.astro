@@ -27,7 +27,11 @@ const isEs = locale === "es";
         href={getRelativeLocaleUrl(locale, "/")}
         class="flex items-center gap-2"
       >
-        <img src="/khipu_logo.png" alt="Logo" class="w-56 h-12" />
+        <img
+          src="/brand/khipux ilo transparent 3.png"
+          alt="Logo"
+          class="h-10"
+        />
       </a>
 
       <!-- Desktop Navigation -->
@@ -86,12 +90,12 @@ const isEs = locale === "es";
     <div class="px-4 py-4 space-y-3">
       {
         navLinks.map((link) => (
-        <a
-          href={link.href}
-          class="nav-link block text-base font-medium py-2 hover:text-primary-500"
-        >
-          {link.label}
-        </a>
+          <a
+            href={link.href}
+            class="nav-link block text-base font-medium py-2 hover:text-primary-500"
+          >
+            {link.label}
+          </a>
         ))
       }
       <a
@@ -123,7 +127,7 @@ const isEs = locale === "es";
         "bg-black/95",
         "backdrop-blur-md",
         "border-gray-800",
-        "is-scrolled"
+        "is-scrolled",
       );
     } else {
       // Top of page: transparent
@@ -131,7 +135,7 @@ const isEs = locale === "es";
         "bg-black/95",
         "backdrop-blur-md",
         "border-gray-800",
-        "is-scrolled"
+        "is-scrolled",
       );
       mainNav?.classList.add("bg-transparent", "border-transparent");
     }
@@ -155,14 +159,14 @@ const isEs = locale === "es";
 
   /* Handle LanguagePicker children */
   #main-nav:not(.is-scrolled) :global(.lang-link span) {
-     color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
   }
-  
+
   #main-nav.is-scrolled :global(.lang-link) {
-     color: #d1d5db;
+    color: #d1d5db;
   }
-  
+
   #main-nav:not(.is-scrolled) :global(.lang-link) {
-     color: white;
+    color: white;
   }
 </style>

@@ -48,14 +48,14 @@ const infiniteSpeakers = [...filteredSpeakers, ...filteredSpeakers, ...filteredS
           {
             infiniteSpeakers.map((speaker, index) => (
               <a href={`/${locale}/speakers#${speaker.id}`} class="group relative flex flex-col items-center cursor-pointer shrink-0 w-48 md:w-64 transition-transform hover:scale-105">
-                <div class="relative w-32 h-32 md:w-44 md:h-44 mb-10 mx-auto">
+                <div class="relative w-32 h-32 md:w-44 md:h-44 mb-16 mx-auto">
                   <!-- Decorative Margin Frame (Unique rotation per index) -->
                   <div 
                     class="absolute inset-[-20%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center"
                     style={`transform: rotate(${(index * 35) % 360}deg)`}
                   >
                     <img
-                      src="/margen.webp"
+                      src="/recorte.png"
                       alt=""
                       class="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(241,91,36,0.4)]"
                     />
