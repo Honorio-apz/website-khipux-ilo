@@ -3,13 +3,14 @@
         "name_es": "Dirección General",
         "name_en": "General Direction",
         "coordinator": {
-            "name": "Honorio Apaza Alanoca",
-            "role_es": "Director del Comité Organizador",
+            "name": "Honorio Apaza ",
+            "role_es": "Director Gneral de Organización",
             "role_en": "Organizing Committee Director",
-            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
-            "bio": "Director del Comité Organizador. Docente universitario e investigador en IA. Cofundador de AiMara Lab.",
+            "image": "https://hapaza.aimaralab.com/honorio.png",
+            "bio": "Director Gneral de Organización",
             "affiliation": "AiMara Lab"
         },
+        
         "leads": [
             {
                 "name": "Allison Inguer Reynoso Serra",
