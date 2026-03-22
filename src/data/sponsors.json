@@ -7,6 +7,14 @@
         {
             "name": "Universidad Nacional de Moquegua",
             "logo": "/sponsors/unam.png"
+        },
+        {
+            "name": "Escuela Profesional de Ciencias de la Computación",
+            "logo": "/sponsors/cs_unam.png"
+        },
+        {
+            "name": "Escuela Profesional de Ingenieria de Sistemas e Informatica",
+            "logo": "/sponsors/episi.png"
         }
     ],
     "platinum": [
@@ -57,6 +65,10 @@
         {
             "name": "Brain Trainr",
             "logo": "/sponsors/braintrainr.jpeg"
+        },
+        {
+            "name": "Unity",
+            "logo": "/sponsors/unity.png"
         }
     ],
     "bronze": []
