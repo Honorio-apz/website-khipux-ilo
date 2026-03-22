@@ -17,21 +17,43 @@ const backgroundSymbols = [
   "/images/patterns/symbol1.svg",
   "/images/patterns/symbol2.svg",
 ];
+const slides = [
+  "/slides/1.jpeg",
+  "/slides/2.jpeg",
+  "/slides/3.jpeg",
+  "/slides/5.jpeg",
+  "/slides/01.jpg.jpeg",
+  "/slides/04.jpg.jpeg",
+  "/slides/10.jpg.jpeg",
+];
 ---
 
 <section
-  class="relative min-h-dvh flex items-center justify-center bg-black bg-cover bg-center overflow-hidden pt-28 pb-12"
-  style="background-image: url('/venue/3-ciudad.jpg');"
+  class="relative min-h-dvh flex items-center justify-center bg-black overflow-hidden pt-28 pb-12"
 >
+  <!-- Background Carousel -->
+  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+    {
+      slides.map((slide, index) => (
+        <div
+          class={`absolute inset-0 bg-cover bg-center transition-opacity duration-2000 ease-in-out hero-slide ${
+            index === 0 ? "opacity-100 active" : "opacity-0"
+          }`}
+          style={`background-image: url('${slide}'); z-index: ${slides.length - index};`}
+        />
+      ))
+    }
+  </div>
+
   <!-- Main Background Overlay (Darker) -->
   <div
-    class="absolute inset-0 bg-linear-to-b from-black/90 via-black/70 to-black z-0 pointer-events-none"
+    class="absolute inset-0 bg-linear-to-b from-black/80 via-black/40 to-black z-1 pointer-events-none"
   >
   </div>
 
   <!-- Content Contrast Overlay (Radial) -->
   <div
-    class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(0,0,0,0.6)_0%,_transparent_10%)] z-0 pointer-events-none"
+    class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.6)_0%,transparent_10%)] z-1 pointer-events-none"
   >
   </div>
 
@@ -261,3 +283,45 @@ const backgroundSymbols = [
     }
   }
 </style>
+
+<script>
+  function setupCarousel() {
+    const slides = document.querySelectorAll('.hero-slide');
+    if (slides.length <= 1) return;
+
+    // Pick a random starting index
+    let currentIndex = Math.floor(Math.random() * slides.length);
+    
+    // Reset all slides and set only the random one to active
+    slides.forEach((slide, index) => {
+      slide.classList.remove('opacity-100', 'active');
+      slide.classList.add('opacity-0');
+      if (index === currentIndex) {
+        slide.classList.remove('opacity-0');
+        slide.classList.add('opacity-100', 'active');
+      }
+    });
+
+    const interval = 5000; // 5 seconds per slide
+
+    setInterval(() => {
+      const currentSlide = slides[currentIndex];
+      currentIndex = (currentIndex + 1) % slides.length;
+      const nextSlide = slides[currentIndex];
+
+      // Fade out current
+      currentSlide.classList.remove('opacity-100', 'active');
+      currentSlide.classList.add('opacity-0');
+
+      // Fade in next
+      nextSlide.classList.remove('opacity-0');
+      nextSlide.classList.add('opacity-100', 'active');
+    }, interval);
+  }
+
+  // Initial setup
+  setupCarousel();
+
+  // Re-run on View Transitions if enabled
+  document.addEventListener('astro:after-swap', setupCarousel);
+</script>
