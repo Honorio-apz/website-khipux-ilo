@@ -68,13 +68,14 @@ const speakers = speakersData.filter((s) => s.type === "speaker");
                         </div>
                     </div>
 
-                    <div
-                        class="flex flex-col gap-12 max-w-5xl mx-auto w-full"
-                    >
+                    <div class="flex flex-col gap-12 max-w-5xl mx-auto w-full">
                         {
                             keynotes.map((speaker, index) => (
                                 <div class="w-full">
-                                    <MemberCard member={speaker} variant="horizontal" />
+                                    <MemberCard
+                                        member={speaker}
+                                        variant="horizontal"
+                                    />
                                 </div>
                             ))
                         }
@@ -91,7 +92,7 @@ const speakers = speakersData.filter((s) => s.type === "speaker");
                         <h2
                             class="text-xl md:text-2xl font-bold text-primary-400 uppercase tracking-widest text-center px-4"
                         >
-                            {isEs ? "Speakers Invitados" : "Guest Speakers"}
+                            {isEs ? "Panelistas Invitados" : "Guest Panelists"}
                         </h2>
                         <div
                             class="h-px flex-1 bg-linear-to-r from-transparent via-white/10 to-transparent"

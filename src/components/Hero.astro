@@ -18,7 +18,7 @@ const backgroundSymbols = [
   "/images/patterns/symbol2.svg",
 ];
 const slides = [
-  "/slides/1.jpeg",
+  "/slides/11.png",
   "/slides/2.jpeg",
   "/slides/3.jpeg",
   "/slides/5.jpeg",
@@ -36,7 +36,7 @@ const slides = [
     {
       slides.map((slide, index) => (
         <div
-          class={`absolute inset-0 bg-cover bg-center transition-opacity duration-2000 ease-in-out hero-slide ${
+          class={`absolute inset-0 bg-cover bg-center transition-opacity duration-[6000ms] ease-in-out hero-slide ${
             index === 0 ? "opacity-100 active" : "opacity-0"
           }`}
           style={`background-image: url('${slide}'); z-index: ${slides.length - index};`}
@@ -286,23 +286,23 @@ const slides = [
 
 <script>
   function setupCarousel() {
-    const slides = document.querySelectorAll('.hero-slide');
+    const slides = document.querySelectorAll(".hero-slide");
     if (slides.length <= 1) return;
 
     // Pick a random starting index
     let currentIndex = Math.floor(Math.random() * slides.length);
-    
+
     // Reset all slides and set only the random one to active
     slides.forEach((slide, index) => {
-      slide.classList.remove('opacity-100', 'active');
-      slide.classList.add('opacity-0');
+      slide.classList.remove("opacity-100", "active");
+      slide.classList.add("opacity-0");
       if (index === currentIndex) {
-        slide.classList.remove('opacity-0');
-        slide.classList.add('opacity-100', 'active');
+        slide.classList.remove("opacity-0");
+        slide.classList.add("opacity-100", "active");
       }
     });
 
-    const interval = 5000; // 5 seconds per slide
+    const interval = 19000; // 12 seconds per slide to allow 9 seconds of smooth fading
 
     setInterval(() => {
       const currentSlide = slides[currentIndex];
@@ -310,12 +310,12 @@ const slides = [
       const nextSlide = slides[currentIndex];
 
       // Fade out current
-      currentSlide.classList.remove('opacity-100', 'active');
-      currentSlide.classList.add('opacity-0');
+      currentSlide.classList.remove("opacity-100", "active");
+      currentSlide.classList.add("opacity-0");
 
       // Fade in next
-      nextSlide.classList.remove('opacity-0');
-      nextSlide.classList.add('opacity-100', 'active');
+      nextSlide.classList.remove("opacity-0");
+      nextSlide.classList.add("opacity-100", "active");
     }, interval);
   }
 
@@ -323,5 +323,5 @@ const slides = [
   setupCarousel();
 
   // Re-run on View Transitions if enabled
-  document.addEventListener('astro:after-swap', setupCarousel);
+  document.addEventListener("astro:after-swap", setupCarousel);
 </script>

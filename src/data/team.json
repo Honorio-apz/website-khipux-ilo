@@ -4,97 +4,246 @@
     "subtitle": "Nuestro Equipo",
     "viewMore": "Ver Detalles de Equipo",
     "leadership": {
-      "name": "Comité Organizador",
+      "name": "Dirección y Estrategia",
       "members": [
-        { "name": "Honorio Apaza", "role": "Director del Comité Organizador", "image": "https://www.aimaralab.com/team/honorio.png" },
-        { "name": "Allison Reynoso", "role": "Coordinadora de Contenido y Programación", "image": "https://www.aimaralab.com/team/allison.png" },
-        { "name": "Brigida Huahualuque", "role": "Coordinadora de Outreach Comunitario" },
-        { "name": "Luciana Benotti", "role": "Mentora Estratégica" }
+        {
+          "name": "Honorio Apaza",
+          "role": "Director del Comité Organizador",
+          "image": "https://www.aimaralab.com/team/honorio.png",
+          "linkedin": "https://www.linkedin.com/in/honorio-aa/"
+        },
+        {
+          "name": "Allison Reynoso",
+          "role": "Coordinadora de Contenido y Programación",
+          "image": "https://www.aimaralab.com/team/allison.png",
+          "linkedin": "https://www.linkedin.com/in/allison-reynoso-serra/"
+        },
+        {
+          "name": "Brigida Huahualuque",
+          "role": "Coordinadora de Outreach Comunitario",
+          "image": "https://media.licdn.com/dms/image/v2/C4E03AQGN1wPtWUvTHA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640567593422?e=1775692800&v=beta&t=sZlfU9aTtEuVKoHtBqff4qoBdKIBrbIe6ZMR8KPfjTQ",
+          "linkedin": ""
+        },
+        {
+          "name": "Carlos Silva",
+          "image": "https://simbig.org/SIMBig2024/assets/images/committee/carlos.jpeg",
+          "role": "Local Chair",
+          "linkedin": ""
+        },
+        {
+          "name": "Luciana Benotti",
+          "image": "https://media.licdn.com/dms/image/v2/C4D03AQFqUPUYStV5fA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554339110506?e=1775692800&v=beta&t=JMK4cc-iy4z3MoNHjIyNO8JVcVBA2FSLImRjoKsZKzs",
+          "role": "Mentora Estratégica",
+          "linkedin": "https://www.linkedin.com/in/luciana-benotti/"
+        }
       ]
     },
-    "coordinations": [
-      {
-        "id": "academic",
-        "name": "Programa Académico",
-        "coordinator": { "name": "Yoselin Arocutipa", "role": "COORDINADORA", "image": "https://www.aimaralab.com/team/yoselin.png" },
-        "supportLabel": "ENCARGADOS:",
-        "support": [
-          { "name": "Frank Ruiz", "role": "Presentadores", "image": "https://www.aimaralab.com/team/frank.png" },
-          { "name": "Elian Laura", "role": "Expertis" }
-        ]
-      },
-      {
-        "id": "communications",
-        "name": "Comunicaciones",
-        "coordinator": { "name": "Jose Paye", "role": "COORDINADOR", "image": "https://www.aimaralab.com/team/jose.png" },
-        "supportLabel": "ENCARGADOS:",
-        "support": [
-          { "name": "Elmer Collanqui", "role": "Responsable de gestión web", "image": "https://www.aimaralab.com/team/elmer.png" },
-          { "name": "Mirian Cayo", "role": "Responsable de Diseño" },
-          { "name": "Jamir Balcona", "role": "Responsable de Contenido", "image": "https://www.aimaralab.com/team/jamir.png" },
-          { "name": "Michael", "role": "Responsable de Redes Sociales" },
-          { "name": "Hans Amesquita", "role": "Responsable sistema control de asistencia" }
-        ]
-      },
-      {
-        "id": "diversity",
-        "name": "Inclusión y Diversidad",
-        "coordinator": { "name": "Wilbur Naike", "role": "COORDINADOR", "image": "https://www.aimaralab.com/team/wilbur.png" },
-        "supportLabel": "ENCARGADOS:",
-        "support": [
-          { "name": "Mariela Nina", "role": "Comité selectivo", "image": "https://www.aimaralab.com/team/mariela.png" },
-          { "name": "Brigida Huahualuque", "role": "Comite de Diversidad" }
-        ]
-      }
-    ]
+    "coordinators": {
+      "name": "Coordinadores de Área",
+      "members": [
+        {
+          "name": "Yoselin Arocutipa",
+          "role": "Comité Académico",
+          "image": "https://www.aimaralab.com/team/yoselin.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Elian Laura",
+          "role": "Mentora de Programa",
+          "image": "https://media.licdn.com/dms/image/v2/D4D03AQEhiHD7XGVu7A/profile-displayphoto-crop_800_800/B4DZxTy4IpG8AI-/0/1770932372472?e=1775692800&v=beta&t=x-BbDTDhPQAwSPxhlvm1cEz7FIrcdFP8hxZqSpqAE6g",
+          "linkedin": "https://www.linkedin.com/in/elianlaura/"
+        },
+        {
+          "name": "Wilbur Naike Chiuyari",
+          "role": "Comité de Becas",
+          "image": "https://www.aimaralab.com/team/wilbur.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Anna Korhonen",
+          "role": "Comité selección de becarios",
+          "image": "https://media.licdn.com/dms/image/v2/D4D03AQFJ_CvDo3T0sg/profile-displayphoto-shrink_800_800/B4DZdfVftJHkAk-/0/1749651160468?e=1775692800&v=beta&t=EnQRRF-W38UK_A08jgjwDEUcuki35EaP_hUjqCOhaHk",
+          "linkedin": "https://www.linkedin.com/in/anna-korhonen-534a9b5/"
+        },
+        {
+          "name": "Mariela Nina",
+          "role": "Comité Diversidad, Equidad e Inclusión",
+          "image": "https://www.aimaralab.com/team/mariela.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Seline Maquera",
+          "role": "Comité Logística y Operaciones",
+          "image": "https://www.aimaralab.com/team/seline.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Jose Paye",
+          "role": "Comité de Comunicaciones y Marketing",
+          "image": "https://www.aimaralab.com/team/jose.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Elmer Collanqui",
+          "role": "Responsable de Asuntos Legales y Administrativos",
+          "image": "https://www.aimaralab.com/team/elmer.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Fernando Oré",
+          "role": "Comité Streaming y Soporte Técnico",
+          "image": "https://www.aimaralab.com/team/fernando.png",
+          "linkedin": ""
+        }
+      ]
+    },
+    "support": {
+      "name": "Personal de Apoyo",
+      "members": [
+        {
+          "name": "Mirian Cayo",
+          "role": "Responsable de Diseño",
+          "linkedin": ""
+        },
+        {
+          "name": "Jamir Balcona",
+          "role": "Responsable de Contenido",
+          "linkedin": ""
+        },
+        {
+          "name": "Hans Amesquita",
+          "role": "Responsable sistema control de asistencia",
+          "linkedin": ""
+        },
+        {
+          "name": "Frank Ruiz",
+          "role": "Presentadores",
+          "linkedin": ""
+        }
+      ]
+    }
   },
   "en": {
     "title": "Organizing Committee",
     "subtitle": "Our Team",
     "viewMore": "View Team Details",
     "leadership": {
-      "name": "Organizing Committee",
+      "name": "Leadership & Strategy",
       "members": [
-        { "name": "Honorio Apaza", "role": "Organizing Committee Director", "image": "https://www.aimaralab.com/team/honorio.png" },
-        { "name": "Allison Reynoso", "role": "Content and Programming Coordinator", "image": "https://www.aimaralab.com/team/allison.png" },
-        { "name": "Brigida Huahualuque", "role": "Community Outreach Coordinator" },
-        { "name": "Luciana Benotti", "role": "Strategic Mentor" }
+        {
+          "name": "Honorio Apaza",
+          "role": "General Chair",
+          "image": "https://www.aimaralab.com/team/honorio.png",
+          "linkedin": "https://www.linkedin.com/in/honorio-aa/"
+        },
+        {
+          "name": "Allison Reynoso",
+          "role": "Program & Content Coordinator",
+          "image": "https://www.aimaralab.com/team/allison.png",
+          "linkedin": "https://www.linkedin.com/in/allison-reynoso-serra/"
+        },
+        {
+          "name": "Brigida Huahualuque",
+          "role": "Community Outreach Coordinator",
+          "image": "https://media.licdn.com/dms/image/v2/C4E03AQGN1wPtWUvTHA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1640567593422?e=1775692800&v=beta&t=sZlfU9aTtEuVKoHtBqff4qoBdKIBrbIe6ZMR8KPfjTQ",
+          "linkedin": ""
+        },
+        {
+          "name": "Carlos Silva",
+          "image": "https://simbig.org/SIMBig2024/assets/images/committee/carlos.jpeg",
+          "role": "Local Chair",
+          "linkedin": ""
+        },
+        {
+          "name": "Luciana Benotti",
+          "image": "https://media.licdn.com/dms/image/v2/C4D03AQFqUPUYStV5fA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554339110506?e=1775692800&v=beta&t=JMK4cc-iy4z3MoNHjIyNO8JVcVBA2FSLImRjoKsZKzs",
+          "role": "Strategic Mentor",
+          "linkedin": "https://www.linkedin.com/in/luciana-benotti/"
+        }
       ]
     },
-    "coordinations": [
-      {
-        "id": "academic",
-        "name": "Academic Program",
-        "coordinator": { "name": "Yoselin Arocutipa", "role": "COORDINATOR", "image": "https://www.aimaralab.com/team/yoselin.png" },
-        "supportLabel": "AREA LEADS:",
-        "support": [
-          { "name": "Frank Ruiz", "role": "Presenters", "image": "https://www.aimaralab.com/team/frank.png" },
-          { "name": "Elian Laura", "role": "Expertship" }
-        ]
-      },
-      {
-        "id": "communications",
-        "name": "Communications",
-        "coordinator": { "name": "Jose Paye", "role": "COORDINATOR", "image": "https://www.aimaralab.com/team/jose.png" },
-        "supportLabel": "AREA LEADS:",
-        "support": [
-          { "name": "Elmer Collanqui", "role": "Web Management Lead", "image": "https://www.aimaralab.com/team/elmer.png" },
-          { "name": "Mirian Cayo", "role": "Design Lead" },
-          { "name": "Jamir Balcona", "role": "Content Lead", "image": "https://www.aimaralab.com/team/jamir.png" },
-          { "name": "Michael", "role": "Social Media Lead" },
-          { "name": "Hans Amesquita", "role": "Attendance Systems Lead" }
-        ]
-      },
-      {
-        "id": "diversity",
-        "name": "Inclusion & Diversity",
-        "coordinator": { "name": "Wilbur Naike", "role": "COORDINATOR", "image": "https://www.aimaralab.com/team/wilbur.png" },
-        "supportLabel": "AREA LEADS:",
-        "support": [
-          { "name": "Mariela Nina", "role": "Selection Committee", "image": "https://www.aimaralab.com/team/mariela.png" },
-          { "name": "Brigida Huahualuque", "role": "Diversity Committee" }
-        ]
-      }
-    ]
+    "coordinators": {
+      "name": "Area Coordinators",
+      "members": [
+        {
+          "name": "Yoselin Arocutipa",
+          "role": "Academic Committee",
+          "image": "https://www.aimaralab.com/team/yoselin.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Elian Laura",
+          "role": "Program Mentor",
+          "image": "https://media.licdn.com/dms/image/v2/D4D03AQEhiHD7XGVu7A/profile-displayphoto-crop_800_800/B4DZxTy4IpG8AI-/0/1770932372472?e=1775692800&v=beta&t=x-BbDTDhPQAwSPxhlvm1cEz7FIrcdFP8hxZqSpqAE6g",
+          "linkedin": "https://www.linkedin.com/in/elianlaura/"
+        },
+        {
+          "name": "Wilbur Naike Chiuyari",
+          "role": "Scholarship Committee",
+          "image": "https://www.aimaralab.com/team/wilbur.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Anna Korhonen",
+          "role": "Scholarship Selection Committee",
+          "image": "https://media.licdn.com/dms/image/v2/D4D03AQFJ_CvDo3T0sg/profile-displayphoto-shrink_800_800/B4DZdfVftJHkAk-/0/1749651160468?e=1775692800&v=beta&t=EnQRRF-W38UK_A08jgjwDEUcuki35EaP_hUjqCOhaHk",
+          "linkedin": "https://www.linkedin.com/in/anna-korhonen-534a9b5/"
+        },
+        {
+          "name": "Mariela Nina",
+          "role": "Diversity, Equity & Inclusion Committee",
+          "image": "https://www.aimaralab.com/team/mariela.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Seline Maquera",
+          "role": "Logistics & Operations Committee",
+          "image": "https://www.aimaralab.com/team/seline.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Jose Paye",
+          "role": "Communications & Marketing Committee",
+          "image": "https://www.aimaralab.com/team/jose.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Elmer Collanqui",
+          "role": "Head of Legal and Administrative Affairs",
+          "image": "https://www.aimaralab.com/team/elmer.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Fernando Oré",
+          "role": "Streaming & Technical Support Committee",
+          "linkedin": ""
+        }
+      ]
+    },
+    "support": {
+      "name": "Support Staff",
+      "members": [
+        {
+          "name": "Mirian Cayo",
+          "role": "Design Lead",
+          "linkedin": ""
+        },
+        {
+          "name": "Jamir Balcona",
+          "role": "Content Lead",
+          "linkedin": ""
+        },
+        {
+          "name": "Hans Amesquita",
+          "role": "Attendance Control System Lead",
+          "linkedin": ""
+        },
+        {
+          "name": "Frank Ruiz",
+          "role": "Presenters",
+          "linkedin": ""
+        }
+      ]
+    }
   }
 }

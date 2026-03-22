@@ -9,6 +9,7 @@ interface Props {
     image?: string;
     bio?: string;
     affiliation?: string;
+    linkedin?: string;
   };
   locale?: string;
   variant?: "vertical" | "horizontal";
@@ -32,11 +33,15 @@ const role =
       ? member.role_es
       : member.role_en
     : member.role;
+
+const Tag = member.linkedin ? "a" : "div";
+const linkProps = member.linkedin ? { href: member.linkedin, target: "_blank", rel: "noopener noreferrer" } : {};
 ---
 
-<div
+<Tag
+  {...linkProps}
   id={member.id}
-  class={`group relative w-full scroll-mt-20 ${variant === "horizontal" ? "flex flex-col md:flex-row items-center py-8" : "flex flex-col items-center text-center w-full"}`}
+  class={`group relative w-full scroll-mt-20 ${variant === "horizontal" ? "flex flex-col md:flex-row items-center py-8" : "flex flex-col items-center text-center w-full"} ${member.linkedin ? "cursor-pointer" : ""}`}
 >
   <div
     class={`relative shrink-0 z-20 ${
@@ -112,7 +117,7 @@ const role =
     }
 
     <h3
-      class={`font-bold text-white mb-2 transition-colors uppercase tracking-tight ${variant === "horizontal" ? "text-xl md:text-2xl group-hover:text-primary-400" : "text-base group-hover:text-primary-400"}`}
+      class={`font-bold text-white mb-2 transition-colors uppercase tracking-tight ${variant === "horizontal" ? "text-xl md:text-2xl" : "text-base"}`}
     >
       {member.name}
     </h3>
@@ -144,4 +149,4 @@ const role =
       )
     }
   </div>
-</div>
+</Tag>
