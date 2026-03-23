@@ -1,6 +1,6 @@
 [
     {
-        "id": "4",
+        "id": "1",
         "name": "Arturo Oncevay",
         "role": "Senior AI Researcher en JPMorgan Chase (Londres)",
         "image": "/keynotes/arturooncevay.jpeg",
@@ -9,7 +9,7 @@
         "status": "confirmed"
     },
     {
-        "id": "3",
+        "id": "2",
         "name": "Omar Flórez",
         "role": "Senior AI Research Scientist | Ex-Twitter Cortex & Intel Labs (Silicon Valley)",
         "image": "/keynotes/omarflores.jpeg",
@@ -18,7 +18,16 @@
         "status": "confirmed"
     },
     {
-        "id": "1",
+        "id": "3",
+        "name": "Rosa Paccotacya Yanque",
+        "role": "MSc en Ciencia de la Computación (UNICAMP) e Investigadora en IA (UCSP/UNSA)",
+        "image": "https://media.licdn.com/dms/image/v2/C4E03AQHHviV2YFmEfw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1561517968061?e=1775692800&v=beta&t=4_TKkUirhVnS98p7W7mL-zpLN6yq2s-BuVu2muPEJPE",
+        "bio": "Científica de la Computación con maestría por la Universidad Estadual de Campinas (UNICAMP - Brasil), especializada en Visión Computacional e Inteligencia Artificial Responsable. Rosa es una investigadora pionera en la intersección de la IA y las lenguas originarias, destacando por su trabajo en el desarrollo de modelos de reconocimiento de emociones aplicados al habla quechua. Como docente e investigadora en la UCSP y la UNSA, lidera proyectos que garantizan la equidad (fairness) y la creación de corpus lingüísticos bilingües, demostrando que la innovación tecnológica debe ser transparente, ética y con un profundo respeto por la identidad cultural andina.",
+        "type": "keynote",
+        "status": "confirmed"
+    },
+    {
+        "id": "4",
         "name": "Norman Valdez",
         "role": "CEO de BrainTrainr & Emerging Technology Fellow (Canadá)",
         "image": "/keynotes/normanvaldez.jpeg",
@@ -27,7 +36,7 @@
         "status": "confirmed"
     },
     {
-        "id": "2",
+        "id": "5",
         "name": "Elías R. Ajata",
         "role": "Lingüista y Activista Digital de la Lengua Aymara | Creador de Aymar Yatiqaña",
         "image": "/keynotes/reynaldo.jpeg",
@@ -36,7 +45,7 @@
         "status": "confirmed"
     },
     {
-        "id": "9",
+        "id": "6",
         "name": "Keny Lazo",
         "role": "CEO da Sumatec & Diretor de Startup Grind (Arequipa)",
         "image": "/keynotes/kennylazo.jpeg",
@@ -45,7 +54,7 @@
         "status": "confirmed"
     },
     {
-        "id": "5",
+        "id": "7",
         "name": "Honorio Apaza",
         "role": "Ivestigador de NLP & Fundador de AiMARA Lab",
         "image": "/keynotes/honorioapaza.jpg",
@@ -54,7 +63,7 @@
         "status": "confirmed"
     },
     {
-        "id": "6",
+        "id": "8",
         "name": "Israel Chaparro",
         "role": "NVIDIA Deep Learning Institute Certified Instructor | Investigador RENACYT",
         "image": "/keynotes/israel.jpeg",
@@ -63,7 +72,7 @@
         "status": "confirmed"
     },
     {
-        "id": "7",
+        "id": "9",
         "name": "Brisayda Aruhuanca",
         "role": "Comunicadora y Conductora de TV Perú en Aymara(Jiwasanaka)",
         "image": "/keynotes/brisaydaaruancca.jpg",
@@ -72,7 +81,7 @@
         "status": "confirmed"
     },
     {
-        "id": "8",
+        "id": "10",
         "name": "Brigida Huahualuque",
         "role": "Investigadora en Etnomatemática y Especialista en Educación Intercultural Bilingüe (EIB)",
         "image": "/keynotes/brigidahuahualuque.jpg",
