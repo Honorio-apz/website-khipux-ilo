@@ -19,8 +19,8 @@
     },
     {
         "id": "3",
-        "name": "Rosa Paccotacya Yanque",
-        "role": "MSc en Ciencia de la Computación (UNICAMP) e Investigadora en IA (UCSP/UNSA)",
+        "name": "Rosa Paccotacya",
+        "role": "MSc en Ciencia de la Computación (UNICAMP - Brasil)",
         "image": "https://media.licdn.com/dms/image/v2/C4E03AQHHviV2YFmEfw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1561517968061?e=1775692800&v=beta&t=4_TKkUirhVnS98p7W7mL-zpLN6yq2s-BuVu2muPEJPE",
         "bio": "Científica de la Computación con maestría por la Universidad Estadual de Campinas (UNICAMP - Brasil), especializada en Visión Computacional e Inteligencia Artificial Responsable. Rosa es una investigadora pionera en la intersección de la IA y las lenguas originarias, destacando por su trabajo en el desarrollo de modelos de reconocimiento de emociones aplicados al habla quechua. Como docente e investigadora en la UCSP y la UNSA, lidera proyectos que garantizan la equidad (fairness) y la creación de corpus lingüísticos bilingües, demostrando que la innovación tecnológica debe ser transparente, ética y con un profundo respeto por la identidad cultural andina.",
         "type": "keynote",
@@ -56,7 +56,7 @@
     {
         "id": "7",
         "name": "Honorio Apaza",
-        "role": "Ivestigador de NLP & Fundador de AiMARA Lab",
+        "role": "General Chair | MSc en Ciencia de la Computación | Investigador de IA",
         "image": "/keynotes/honorioapaza.jpg",
         "bio": "Maestro en Ciencia de la Computación por la UNSA, especializado en el Procesamiento de Lenguaje Natural (NLP) aplicado a lenguas originarias. Como Investigador RENACYT, su trabajo se centra en el desarrollo de arquitecturas de traducción neuronal y la creación de corpus bilingües de alta precisión para la lengua aimara. A través de AiMARA Lab, lidera proyectos de investigación que integran la inteligencia artificial con la preservación lingüística",
         "type": "speaker",

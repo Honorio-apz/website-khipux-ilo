@@ -35,7 +35,9 @@ const role =
     : member.role;
 
 const Tag = member.linkedin ? "a" : "div";
-const linkProps = member.linkedin ? { href: member.linkedin, target: "_blank", rel: "noopener noreferrer" } : {};
+const linkProps = member.linkedin
+  ? { href: member.linkedin, target: "_blank", rel: "noopener noreferrer" }
+  : {};
 ---
 
 <Tag
@@ -64,13 +66,15 @@ const linkProps = member.linkedin ? { href: member.linkedin, target: "_blank", r
     {/* Decorative Margin Frame (Halo) */}
     {
       halo !== "none" && (
-        <div class={`absolute inset-[-25%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center`}>
+        <div
+          class={`absolute inset-[-25%] z-0 pointer-events-none transition-all duration-700 ease-in-out scale-100 opacity-100 group-hover:scale-50 group-hover:opacity-0 group-hover:rotate-12 origin-center`}
+        >
           <img
             src="/recorte.png"
             alt=""
             class={`w-full h-full object-contain ${
-              halo === "primary" 
-                ? "drop-shadow-[0_0_20px_rgba(216,81,32,0.4)]" 
+              halo === "primary"
+                ? "drop-shadow-[0_0_20px_rgba(216,81,32,0.4)]"
                 : halo === "gold"
                   ? "saturate(4) hue-rotate(20deg) brightness(1.2)"
                   : "brightness-0 invert opacity-60 drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]"
@@ -95,7 +99,10 @@ const linkProps = member.linkedin ? { href: member.linkedin, target: "_blank", r
         ) : (
           <div class="w-full h-full bg-black flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-700">
             <span class="text-primary-500 font-bold text-2xl">
-              {member.name.split(' ').map(n => n[0]).join('')}
+              {member.name
+                .split(" ")
+                .map((n) => n[0])
+                .join("")}
             </span>
           </div>
         )
