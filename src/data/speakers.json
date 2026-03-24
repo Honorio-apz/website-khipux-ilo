@@ -45,30 +45,12 @@
         "status": "confirmed"
     },
     {
-        "id": "6",
-        "name": "Keny Lazo",
-        "role": "CEO da Sumatec & Diretor de Startup Grind (Arequipa)",
-        "image": "/keynotes/kennylazo.jpeg",
-        "bio": "Emprendedor social, abogado y estratega en economía digital. Como CEO de Sumatec y Co-Director de Startup Grind, Kenny es el motor que conecta el talento local con redes globales de innovación e inversión. Es el fundador de la iniciativa Code en mi Cole, un proyecto pionero que democratiza el pensamiento computacional en el Perú. Con experiencia en misiones tecnológicas a Silicon Valley, su visión integra el derecho, la tecnología y el liderazgo comunitario para transformar el ecosistema de startups en la región, promoviendo una cultura donde la innovación sea accesible para todos.",
-        "type": "keynote",
-        "status": "confirmed"
-    },
-    {
         "id": "7",
         "name": "Honorio Apaza",
         "role": "General Chair | MSc en Ciencia de la Computación | Investigador de IA",
         "image": "/keynotes/honorioapaza.jpg",
         "bio": "Maestro en Ciencia de la Computación por la UNSA, especializado en el Procesamiento de Lenguaje Natural (NLP) aplicado a lenguas originarias. Como Investigador RENACYT, su trabajo se centra en el desarrollo de arquitecturas de traducción neuronal y la creación de corpus bilingües de alta precisión para la lengua aimara. A través de AiMARA Lab, lidera proyectos de investigación que integran la inteligencia artificial con la preservación lingüística",
         "type": "speaker",
-        "status": "confirmed"
-    },
-    {
-        "id": "8",
-        "name": "Israel Chaparro",
-        "role": "NVIDIA Deep Learning Institute Certified Instructor | Investigador RENACYT",
-        "image": "/keynotes/israel.jpeg",
-        "bio": "Especialista en Inteligencia Artificial y Visión por Computador, reconocido como Instructor Certificado y Embajador del Deep Learning Institute de NVIDIA. Investigador calificado por CONCYTEC, Israel lidera proyectos de vanguardia en Deep Learning aplicados a la agricultura de precisión y la salud en el sur del Perú. Con una maestría en Ciencia de la Computación por la UCSP y múltiples patentes ante INDECOPI por dispositivos de IA de borde (Edge AI), es una figura clave en la transferencia tecnológica, capacitando a la próxima generación de ingenieros en el uso de herramientas de computación de alto rendimiento.",
-        "type": "keynote",
         "status": "confirmed"
     },
     {
