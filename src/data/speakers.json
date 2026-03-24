@@ -11,7 +11,7 @@
     {
         "id": "2",
         "name": "Omar Flórez",
-        "role": "Senior AI Research Scientist | Ex-Twitter Cortex & Intel Labs (Silicon Valley)",
+        "role": "Team Lead for Pre-Training of LatamGPT | Ex-Twitter Cortex & Intel Labs (Silicon Valley)",
         "image": "/keynotes/omarflores.jpeg",
         "bio": "Doctor en Inteligencia Artificial por la Utah State University y uno de los investigadores latinos más influyentes en Silicon Valley. Ha liderado proyectos estratégicos en Twitter Cortex, Intel Labs y Capital One, donde desarrolló patentes y algoritmos de Machine Learning para sistemas de comunicación a gran escala y procesamiento de lenguaje natural. Miembro del comité técnico de la Estrategia Nacional de IA y co-fundador de LatinX in AI, Omar es un referente global en la democratización del conocimiento técnico, reconocido con el IBM Research Innovation Award y por su labor en la creación del primer modelo fundacional de lenguaje para Latinoamérica (LatamGPT).",
         "type": "keynote",
@@ -22,7 +22,7 @@
         "name": "Rosa Paccotacya",
         "role": "MSc en Ciencia de la Computación (UNICAMP - Brasil)",
         "image": "https://media.licdn.com/dms/image/v2/C4E03AQHHviV2YFmEfw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1561517968061?e=1775692800&v=beta&t=4_TKkUirhVnS98p7W7mL-zpLN6yq2s-BuVu2muPEJPE",
-        "bio": "Científica de la Computación con maestría por la Universidad Estadual de Campinas (UNICAMP - Brasil), especializada en Visión Computacional e Inteligencia Artificial Responsable. Rosa es una investigadora pionera en la intersección de la IA y las lenguas originarias, destacando por su trabajo en el desarrollo de modelos de reconocimiento de emociones aplicados al habla quechua. Como docente e investigadora en la UCSP y la UNSA, lidera proyectos que garantizan la equidad (fairness) y la creación de corpus lingüísticos bilingües, demostrando que la innovación tecnológica debe ser transparente, ética y con un profundo respeto por la identidad cultural andina.",
+        "bio": "Científica de la Computación con maestría por la Universidad Estatal de Campinas (UNICAMP, Brasil), especializada en Visión Computacional e Inteligencia Artificial Responsable. Rosa es investigadora pionera en la intersección de la IA y las lenguas originarias, destacando por su trabajo en reconocimiento de emociones aplicado al habla quechua. Como docente e investigadora del Departamento de Computación de la Universidad Católica San Pablo, lidera proyectos orientados a la confiabilidad en modelos de IA y la creación de corpus lingüísticos bilingües, con un profundo respeto por la identidad cultural andina. Además, es líder de PhawAI, una iniciativa que impulsa la formación e investigación en IA en estudiantes de pregrado en Perú y Ecuador, contribuyendo al desarrollo de nuevos talentos en la región.",
         "type": "keynote",
         "status": "confirmed"
     },
