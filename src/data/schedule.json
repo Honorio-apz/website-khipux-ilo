@@ -29,8 +29,8 @@
                     "time": "10:00 - 11:30",
                     "title_es": "Panel de Liderazgo Comunitario: Visión de Lenguas Indígenas: ¿Cómo la IA puede potenciar el futuro de las comunidades?",
                     "title_en": "Community Leadership Panel: Indigenous Languages Vision: How can AI empower the future of communities?",
-                    "description_es": "Confirmados: Líderes y representantes influyentes de la comunidad Aymara (Brisayda Aruahuanca), Quechua, IA, NLP.",
-                    "description_en": "Confirmed: Influential leaders and representatives of the Aymara (Brisayda Aruahuanca) and Quechua communities, AI, NLP.",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
                     "speaker_ids": [
                         "3",
                         "5",
@@ -107,12 +107,13 @@
                     "time": "10:30 - 11:30",
                     "title_es": "Panel de Discusión: Desafíos y Oportunidades: Implementando IA en Contextos Culturales Indígenas",
                     "title_en": "Panel: Challenges & Opportunities: Implementing AI in Indigenous Cultural Contexts",
-                    "description_es": "Investigadores del proyectos Traduccion para las lenguas Nativas Peruanas. Tentativos: Expertos en proyectos de traducción Aymara, Quechua y Shipibo-Conibo.",
-                    "description_en": "Researchers from the Translation projects for Peruvian Native languages. Tentative: Experts in Aymara, Quechua and Shipibo-Conibo translation projects.",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
                     "speaker_ids": [
                         "1",
                         "2",
-                        "4"
+                        "4",
+                        "7"
                     ],
                     "type": "panel",
                     "location": "Main Hall",
