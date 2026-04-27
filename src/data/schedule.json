@@ -38,7 +38,7 @@
                     "title_en": "Paqocha: A Retrieval-Augmented Model for Quechua Translation",
                     "description_es": "Por anunciar",
                     "description_en": "To be announced",
-                    "speaker_id": "4",
+                    "speaker_id": "11",
                     "type": "keynote",
                     "location": "Main Hall",
                     "status": "confirmed"
@@ -80,7 +80,7 @@
                     "description_en": "To be announced",
                     "speaker_ids": [
                         "4",
-                        "4",
+                        "11",
                         "9",
                         "5"
                     ],
