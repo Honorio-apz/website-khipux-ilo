@@ -26,48 +26,43 @@
                     "status": "confirmed"
                 },
                 {
-                    "time": "10:00 - 11:30",
-                    "title_es": "Panel de Liderazgo Comunitario: Visión de Lenguas Indígenas: ¿Cómo la IA puede potenciar el futuro de las comunidades?",
-                    "title_en": "Community Leadership Panel: Indigenous Languages Vision: How can AI empower the future of communities?",
-                    "description_es": "Por anunciar",
-                    "description_en": "To be announced",
-                    "speaker_ids": [
-                        "3",
-                        "5",
-                        "9",
-                        "10"
-                    ],
-                    "type": "panel",
-                    "location": "Main Hall",
-                    "status": "confirmed"
-                },
-                {
-                    "time": "11:30 - 12:00",
+                    "time": "10:30 - 11:10",
                     "title_es": "Pausa para Café y Networking",
                     "title_en": "Coffee Break & Networking",
                     "type": "networking",
                     "location": "Lobby"
                 },
                 {
-                    "time": "12:00 - 13:00",
-                    "title_es": "Más allá de las palabras: IA para la emoción y la cognición en el habla quechua",
-                    "title_en": "Beyond Words: AI for Emotion and Cognition in Quechua Speech",
+                    "time": "11:10 - 12:10",
+                    "title_es": "Paqocha: Un modelo de recuperación aumentada para la traducción del quechua",
+                    "title_en": "Paqocha: A Retrieval-Augmented Model for Quechua Translation",
                     "description_es": "Por anunciar",
                     "description_en": "To be announced",
-                    "speaker_id": "3",
+                    "speaker_id": "4",
                     "type": "keynote",
                     "location": "Main Hall",
                     "status": "confirmed"
                 },
                 {
-                    "time": "13:30 - 14:30",
+                    "time": "12:10 - 13:10",
+                    "title_es": "Por anunciar",
+                    "title_en": "To be announced",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
+                    "speaker_id": "9",
+                    "type": "keynote",
+                    "location": "Main Hall",
+                    "status": "confirmed"
+                },
+                {
+                    "time": "13:10 - 14:10",
                     "title_es": "Almuerzo",
                     "title_en": "Lunch",
                     "type": "networking",
                     "location": "Dining Area"
                 },
                 {
-                    "time": "14:30 - 16:00",
+                    "time": "14:10 - 15:10",
                     "title_es": "Conferencia Invitada: Ética de la IA y Soberanía de Datos en Comunidades Indígenas",
                     "title_en": "Keynote: AI Ethics and Data Sovereignty in Indigenous Communities",
                     "description_es": "Por anunciar",
@@ -78,14 +73,30 @@
                     "status": "confirmed"
                 },
                 {
-                    "time": "16:00 - 17:00",
+                    "time": "15:10 - 16:10",
+                    "title_es": "Panel de Liderazgo Comunitario: Visión de Lenguas Indígenas: ¿Cómo la IA puede potenciar el futuro de las comunidades?",
+                    "title_en": "Community Leadership Panel: Indigenous Languages Vision: How can AI empower the future of communities?",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
+                    "speaker_ids": [
+                        "4",
+                        "4",
+                        "9",
+                        "5"
+                    ],
+                    "type": "panel",
+                    "location": "Main Hall",
+                    "status": "confirmed"
+                },
+                {
+                    "time": "16:10 - 17:10",
                     "title_es": "Networking y Exhibición: Sesión de Pósters y Demostraciones de Prototipos",
                     "title_en": "Networking and Exhibition: Poster Session & Prototype Demos",
                     "description_es": "Incluyendo el prototipo del 'Neural Machine Translator for Native Language Aimara'.",
                     "description_en": "Including the prototype of the 'Neural Machine Translator for Native Language Aimara'.",
                     "type": "networking",
                     "location": "Exhibition Hall"
-                }
+                }       
             ]
         },
         {
@@ -99,54 +110,49 @@
                     "title_en": "To be announced",
                     "description_es": "Por anunciar",
                     "description_en": "To be announced",
-                    "speaker_id": "9",
-                    "type": "keynote",
-                    "location": "Main Hall",
-                    "status": "confirmed"
-                },
-                {
-                    "time": "10:30 - 11:30",
-                    "title_es": "Panel de Discusión: Desafíos y Oportunidades: Implementando IA en Contextos Culturales Indígenas",
-                    "title_en": "Panel: Challenges & Opportunities: Implementing AI in Indigenous Cultural Contexts",
-                    "description_es": "Por anunciar",
-                    "description_en": "To be announced",
-                    "speaker_ids": [
-                        "1",
-                        "2",
-                        "4",
-                        "7"
-                    ],
-                    "type": "panel",
-                    "location": "Main Hall",
-                    "status": "confirmed"
-                },
-                {
-                    "time": "11:30 - 12:00",
-                    "title_es": "Pausa para Café",
-                    "title_en": "Coffee Break",
-                    "type": "networking",
-                    "location": "Lobby"
-                },
-                {
-                    "time": "12:00 - 13:30",
-                    "title_es": "Por anunciar",
-                    "title_en": "To be announced",
-                    "description_es": "Por anunciar",
-                    "description_en": "To be announced",
                     "speaker_id": "1",
                     "type": "keynote",
                     "location": "Main Hall",
                     "status": "confirmed"
                 },
                 {
-                    "time": "13:30 - 14:30",
+                    "time": "10:00 - 10:40",
+                    "title_es": "Pausa para Café",
+                    "title_en": "Coffee Break",
+                    "type": "networking",
+                    "location": "Lobby"
+                },
+                {
+                    "time": "10:40 - 11:40",
+                    "title_es": "Traductor AiMara - Traducción automática neuronal para lenguas nativas peruanas",
+                    "title_en": "AiMara Translator - Neural Machine Translation for Native Peruvian Languages",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
+                    "speaker_id": "7",
+                    "type": "keynote",
+                    "location": "Main Hall",
+                    "status": "confirmed"
+                },
+                {
+                    "time": "11:40 - 12:40",
+                    "title_es": "Más allá de las palabras: IA para la emoción y la cognición en el habla quechua",
+                    "title_en": "Beyond Words: AI for Emotion and Cognition in Quechua Speech",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
+                    "speaker_id": "3",
+                    "type": "keynote",
+                    "location": "Main Hall",
+                    "status": "confirmed"
+                },
+                {
+                    "time": "12:40 - 13:40",
                     "title_es": "Almuerzo",
                     "title_en": "Lunch",
                     "type": "networking",
                     "location": "Dining Area"
                 },
                 {
-                    "time": "14:30 - 16:00",
+                    "time": "13:40 - 14:40",
                     "title_es": "Entrenamiento eficiente de grandes modelos de lenguaje (LLMs)",
                     "title_en": "Efficient training of large language models",
                     "description_es": "Por anunciar",
@@ -157,18 +163,36 @@
                     "status": "confirmed"
                 },
                 {
-                    "time": "16:00 - 17:00",
+                    "time": "14:40 - 15:40",
+                    "title_es": "Panel de Discusión: Desafíos y Oportunidades: Implementando IA en Contextos Culturales Indígenas",
+                    "title_en": "Panel: Challenges & Opportunities: Implementing AI in Indigenous Cultural Contexts",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
+                    "speaker_ids": [
+                        "1",
+                        "2",
+                        "3",
+                        "7"
+                    ],
+                    "type": "panel",
+                    "location": "Main Hall",
+                    "status": "confirmed"
+                },  
+                {
+                    "time": "15:40 - 16:40",
                     "title_es": "Próximos Pasos y Construcción de la Comunidad KHIPUx Aimara.",
                     "title_en": "Roundtable: Next Steps and Building the KHIPUx Aymara Community",
                     "type": "panel",
                     "location": "Main Hall"
                 },
                 {
-                    "time": "17:00 - 17:30",
-                    "title_es": "Cierre y Agradecimientos.",
-                    "title_en": "Closing & Acknowledgments",
-                    "type": "logistics",
-                    "location": "Main Hall"
+                    "time": "16:40 - 17:40",
+                    "title_es": "Networking y Exhibición: Sesión de Pósters y Demostraciones de Prototipos",
+                    "title_en": "Networking and Exhibition: Poster Session & Prototype Demos",
+                    "description_es": "Por anunciar",
+                    "description_en": "To be announced",
+                    "type": "networking",
+                    "location": "Exhibition Hall"
                 }
             ]
         }
