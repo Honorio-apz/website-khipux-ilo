@@ -70,5 +70,14 @@
         "bio": "Destacada educadora, investigadora y Yatichiri (maestra) de la lengua aymara, reconocida por la Universidad Nacional Mayor de San Marcos (UNMSM). Con estudios de postgrado en la Cayetano Heredia (UPCH), Brígida es una autoridad en Etnomatemática, disciplina en la que investiga cómo los saberes ancestrales se integran en la educación moderna. Ha sido autora de textos oficiales para el Ministerio de Educación (MINEDU).",
         "type": "speaker",
         "status": "confirmed"
+    },
+    {
+        "id": "11",
+        "name": "Nohelia Tacca Apaza",
+        "role": "Ingeniero de Sistemas y Auxiliar Docente de Quechua en la Universidad de Cornell",
+        "image": "/keynotes/brigidahuahualuque.jpg",
+        "bio": "Por anunciar",
+        "type": "speaker",
+        "status": "confirmed"
     }
 ]
