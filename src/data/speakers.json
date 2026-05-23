@@ -21,7 +21,7 @@
         "id": "3",
         "name": "Rosa Paccotacya",
         "role": "MSc en Ciencia de la Computación (UNICAMP - Brasil)",
-        "image": "https://media.licdn.com/dms/image/v2/C4E03AQHHviV2YFmEfw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1561517968061?e=1775692800&v=beta&t=4_TKkUirhVnS98p7W7mL-zpLN6yq2s-BuVu2muPEJPE",
+        "image": "/keynotes/rosa.jpeg",
         "bio": "Científica de la Computación con maestría por la Universidad Estatal de Campinas (UNICAMP, Brasil), especializada en Visión Computacional e Inteligencia Artificial Responsable. Rosa es investigadora pionera en la intersección de la IA y las lenguas originarias, destacando por su trabajo en reconocimiento de emociones aplicado al habla quechua. Como docente e investigadora del Departamento de Computación de la Universidad Católica San Pablo, lidera proyectos orientados a la confiabilidad en modelos de IA y la creación de corpus lingüísticos bilingües, con un profundo respeto por la identidad cultural andina. Además, es líder de PhawAI, una iniciativa que impulsa la formación e investigación en IA en estudiantes de pregrado en Perú y Ecuador, contribuyendo al desarrollo de nuevos talentos en la región.",
         "type": "keynote",
         "status": "confirmed"
@@ -50,7 +50,7 @@
         "role": "General Chair | MSc en Ciencia de la Computación | Investigador de IA",
         "image": "/keynotes/honorioapaza.jpg",
         "bio": "Maestro en Ciencia de la Computación por la UNSA, especializado en el Procesamiento de Lenguaje Natural (NLP) aplicado a lenguas originarias. Como Investigador RENACYT, su trabajo se centra en el desarrollo de arquitecturas de traducción neuronal y la creación de corpus bilingües de alta precisión para la lengua aimara. A través de AiMARA Lab, lidera proyectos de investigación que integran la inteligencia artificial con la preservación lingüística",
-        "type": "speaker",
+        "type": "keynote",
         "status": "confirmed"
     },
     {
@@ -59,7 +59,7 @@
         "role": "Comunicadora y Conductora de TV Perú en Aymara(Jiwasanaka)",
         "image": "/keynotes/brisaydaaruancca.jpg",
         "bio": "Destacada educadora bilingüe y comunicadora, reconocida como la conductora del primer noticiero en lengua aimara de la historia del Perú, Jiwasanaka (TV Perú). Egresada con honores de la UPCH y becaria de PRONABEC, Brisayda es una referente nacional en la revitalización de lenguas originarias y la educación intercultural. Su labor ha sido fundamental para integrar la cosmovisión andina en los medios de comunicación masivos.",
-        "type": "speaker",
+        "type": "keynote",
         "status": "confirmed"
     },
     {
@@ -76,8 +76,8 @@
         "name": "Nohelia Tacca Apaza",
         "role": "Ingeniera de Sistemas y Quechua FLTA en la Universidad de Cornell (EE.UU.)",
         "image": "/keynotes/noheliatacca.jpg",
-        "bio": "ngeniera de Sistemas y educadora de quechua, comprometida con la educación inclusiva y la innovación tecnológica en contextos interculturales. Actualmente se desempeña como FLTA en Cornell University (EE.UU.), donde impulsa la enseñanza y difusión del quechua en entornos académicos globales. Cuenta con experiencia en proyectos educativos, investigación y tecnología, incluyendo el trabajo con datos lingüísticos y la enseñanza de programación a jóvenes. Su trayectoria integra tecnología, impacto social y revitalización de lenguas originarias.",
-        "type": "speaker",
+        "bio": "Ingeniera de Sistemas y educadora de quechua, comprometida con la educación inclusiva y la innovación tecnológica en contextos interculturales. Actualmente se desempeña como FLTA en Cornell University (EE.UU.), donde impulsa la enseñanza y difusión del quechua en entornos académicos globales. Su trayectoria integra tecnología, impacto social y revitalización de lenguas originarias.",
+        "type": "keynote",
         "status": "confirmed"
     }
 ]
