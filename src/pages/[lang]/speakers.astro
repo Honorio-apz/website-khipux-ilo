@@ -92,7 +92,11 @@ const speakers = speakersData.filter((s) => s.type === "speaker");
                         <h2
                             class="text-xl md:text-2xl font-bold text-primary-400 uppercase tracking-widest text-center px-4"
                         >
-                            {isEs ? "Panelistas Invitados" : "Guest Panelists"}
+                            {
+                                isEs
+                                    ? "Presentadores y Panelistas Invitados"
+                                    : "Guest Panelists"
+                            }
                         </h2>
                         <div
                             class="h-px flex-1 bg-linear-to-r from-transparent via-white/10 to-transparent"

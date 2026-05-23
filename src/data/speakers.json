@@ -79,5 +79,23 @@
         "bio": "Ingeniera de Sistemas y educadora de quechua, comprometida con la educación inclusiva y la innovación tecnológica en contextos interculturales. Actualmente se desempeña como FLTA en Cornell University (EE.UU.), donde impulsa la enseñanza y difusión del quechua en entornos académicos globales. Su trayectoria integra tecnología, impacto social y revitalización de lenguas originarias.",
         "type": "keynote",
         "status": "confirmed"
+    },
+    {
+        "id": "12",
+        "name": "Soledad Jimenez",
+        "role": "Certificada en lenguas originarias por el Ministerio de Cultura del Perú",
+        "image": "/keynotes/soledad.png",
+        "bio": "Traductora e intérprete de lenguas originarias certificada por el Ministerio de Cultura del Perú y destacada maestra de ceremonias en aimara. Como líder en su comunidad, organiza el Encuentro de Creadores de Contenido en aimara en Tacna y cuenta con experiencia en formación internacional de comunicadores, impulsando la preservación cultural en espacios institucionales.",
+        "type": "speaker",
+        "status": "confirmed"
+    },
+    {
+        "id": "13",
+        "name": "Frank Ruiz",
+        "role": "Estudiante Investigador en Inteligencia Artificial y Ciencia de Datos",
+        "image": "/keynotes/frank.png",
+        "bio": "Destacado estudiante de Ingeniería de Sistemas e Informática en la Universidad Nacional de Moquegua (UNAM), perteneciente al décimo superior de la carrera. Reconocido por su excelencia académica y capacidad de liderazgo, fue becario en el Workshop Internacional PhawAI + TaReCDa 2025. Miembro en el grupo de investigación AiMara RG, reconocido con los primeros puestos en mérito académico y competencias de programación.",
+        "type": "speaker",
+        "status": "confirmed"
     }
 ]
